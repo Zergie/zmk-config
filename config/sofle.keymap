@@ -17,20 +17,20 @@
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  `    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   \   |
-// |  ESC  |  Q  |  W  |  F   |  P   |  B   |                   |  J   |  L    |  U    |  Y   |   ;   | BKSPC |
-// | LCTRL |  A  |  R  |  S   |  T   |  G   |                   |  M   |  N    |  E    |  I   |   O   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  D   |  V   |  MUTE  |  | PLAY  |  K   |  H    |  ,    |  .   |   /   | SHIFT |
-//               | CAPS| ALT  | GUI/-| SPACE|LOWER/[ |  |RAISE/]| ENTER|  GUI/=|  ALT  | CTRL |
+// |  `    |  1  |  2  |  3   |  4   |  5          |                   |  6          |  7    |  8    |  9   |   0   |   \   |
+// |  ESC  |  Q  |  W  |  F   |  P   |  B          |                   |  J          |  L    |  U    |  Y   |   ;   | BKSPC |
+// | LCTRL |  A  |  R  |  S   |  T   |  G          |                   |  M          |  N    |  E    |  I   |   O   |   '   |
+// | SHIFT |  Z  |  X  |  C   |  D   |  V          |  MUTE  |  | PLAY  |  K          |  H    |  ,    |  .   |   /   | SHIFT |
+//               | CAPS| ALT  | GUI/-| SHIFT/SPACE |LOWER/[ |  |RAISE/]| SHIFT/ENTER |  GUI/=|  ALT  | CTRL |
             bindings = <
-&kp GRAVE     &kp N1 &kp N2    &kp N3    &kp N4         &kp N5                           &kp N6  &kp N7         &kp N8    &kp N9   &kp N0   &kp BSLH
-&kp ESC       &kp Q  &kp W     &kp F     &kp P          &kp B                            &kp J   &kp L          &kp U     &kp Y    &kp SEMI &kp BSPC
-&kp LCTRL     &kp A  &kp R     &kp S     &kp T          &kp G                            &kp M   &kp N          &kp E     &kp I    &kp O    &kp SQT
-&kp LSHFT     &kp Z  &kp X     &kp C     &kp D          &kp V     &kp C_MUTE  &kp C_PP   &kp K   &kp H          &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
-                     &kp CLCK  &kp LALT  &mt LGUI MINUS &kp SPACE &lt 1 LBKT  &lt 2 RBKT &kp RET &mt RGUI EQUAL &kp RALT  &kp RCTRL
+&kp GRAVE     &kp N1 &kp N2    &kp N3    &kp N4         &kp N5                                 &kp N6        &kp N7         &kp N8    &kp N9   &kp N0   &kp BSLH
+&kp ESC       &kp Q  &kp W     &kp F     &kp P          &kp B                                  &kp J         &kp L          &kp U     &kp Y    &kp SEMI &kp BSPC
+&kp LCTRL     &kp A  &kp R     &kp S     &kp T          &kp G                                  &kp M         &kp N          &kp E     &kp I    &kp O    &kp SQT
+&kp LSHFT     &kp Z  &kp X     &kp C     &kp D          &kp V           &kp C_MUTE  &kp C_PP   &kp K         &kp H          &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+                     &kp CLCK  &kp LALT  &mt LGUI MINUS &mt LSHFT SPACE &lt 1 LBKT  &lt 2 RBKT &mt RSHFT RET &mt RGUI EQUAL &kp RALT  &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
         };
 
         lower_layer {
