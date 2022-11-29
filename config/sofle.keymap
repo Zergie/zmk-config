@@ -17,7 +17,6 @@
         to_GamingLayer {
             bindings = <&to 3>;
             key-positions = <0 2>;
-            layers = <>;
         };
 
         reset_layers {
