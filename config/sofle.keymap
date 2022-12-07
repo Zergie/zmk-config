@@ -31,7 +31,7 @@
     };
 
     macros {
-        umlaut_Ae: umlaut_Ae {
+        umlaut_Ae_big: umlaut_Ae_big {
             compatible = "zmk,behavior-macro";
             label = "Ae";
             #binding-cells = <0>;
@@ -46,7 +46,7 @@
             wait-ms = <10>;
             tap-ms = <10>;
         };
-        umlaut_Oe: umlaut_Oe {
+        umlaut_Oe_big: umlaut_Oe_big {
             compatible = "zmk,behavior-macro";
             label = "Oe";
             #binding-cells = <0>;
@@ -61,7 +61,7 @@
             wait-ms = <10>;
             tap-ms = <10>;
         };
-        umlaut_Ue: umlaut_Ue {
+        umlaut_Ue_big: umlaut_Ue_big {
             compatible = "zmk,behavior-macro";
             label = "Ue";
             #binding-cells = <0>;
