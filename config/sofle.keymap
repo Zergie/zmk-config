@@ -31,7 +31,52 @@
     };
 
     macros {
-        umlaut_oe: umlaut_oe {
+        umlaut_Ae: umlaut_Ae {
+            compatible = "zmk,behavior-macro";
+            label = "Ae";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
+        umlaut_Oe: umlaut_Oe {
+            compatible = "zmk,behavior-macro";
+            label = "Oe";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
+        umlaut_Ue: umlaut_Ue {
+            compatible = "zmk,behavior-macro";
+            label = "Ue";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
+        umlaut_ae: umlaut_ae {
             compatible = "zmk,behavior-macro";
             label = "ae";
             #binding-cells = <0>;
@@ -39,7 +84,52 @@
                 <&macro_press>,
                 <&kp LALT>,
                 <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
+        umlaut_oe: umlaut_oe {
+            compatible = "zmk,behavior-macro";
+            label = "oe";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
                 <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
+        umlaut_ue: umlaut_ue {
+            compatible = "zmk,behavior-macro";
+            label = "ue";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_5 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            wait-ms = <10>;
+            tap-ms = <10>;
+        };
+        umlaut_ss: umlaut_ss {
+            compatible = "zmk,behavior-macro";
+            label = "ss";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
                 <&macro_release>,
                 <&kp LALT>;
 
@@ -64,13 +154,6 @@
         compatible = "zmk,keymap";
 
         default {
-            // ------------------------------------------------------------------------------------------------------------
-            // |  `    |  1  |  2  |  3   |  4   |  5          |                   |  6          |  7    |  8    |  9   |   0   |   \   |
-            // |  ESC  |  Q  |  W  |  F   |  P   |  B          |                   |  J          |  L    |  U    |  Y   |   ;   | BKSPC |
-            // | LCTRL |  A  |  R  |  S   |  T   |  G          |                   |  M          |  N    |  E    |  I   |   O   |   '   |
-            // | SHIFT |  Z  |  X  |  C   |  D   |  V          |  MUTE  |  | PLAY  |  K          |  H    |  ,    |  .   |   /   | SHIFT |
-            //               | CAPS| ALT  | GUI/-| SHIFT/SPACE |LOWER/[ |  |RAISE/]| SHIFT/ENTER |  GUI/=|  ALT  | CTRL |
-
             bindings = <
             &kp GRAVE  &kp N1    &kp N2    &kp N3          &kp N4           &kp N5                                 &kp N6          &kp N7     &kp N8     &kp N9    &kp N0             &kp BSLH
               &kp TAB   &kp Q     &kp W     &kp F           &kp P            &kp B                                  &kp J           &kp L      &kp U      &kp Y  &kp SEMI             &kp BSPC
@@ -83,13 +166,6 @@
         };
 
         lower {
-            // ------------------------------------------------------------------------------------------------------------
-            // | OUT_TOG |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
-            // | BT_NXT  |   1 |   2 |   3  |   4  |   5  |                   |   6  |   7   |   8   |   9  |    0  |  F12  |
-            // | BT_PRV  |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |       |
-            // | BT_CLR  |  -  |  _  |  [   |  {   |  \   |        |  |       |  |   |  }    |  ]    |  =   |   +   |       |
-            //                 |     |      |      |      |        |  |       |      |       |       |      |
-
             bindings = <
  &trans    &kp F1    &kp F2    &kp F3    &kp F4     &kp F5                    &kp F6     &kp F7     &kp F8     &kp F9   &kp F10  &kp F11
  &trans  &kp LBKT  &kp RBKT  &kp LPAR  &kp RPAR  &kp CARET                  &kp HOME  &kp PG_UP  &kp PG_DN    &kp END    &trans  &kp F12
@@ -102,13 +178,6 @@
         };
 
         raise {
-            // ------------------------------------------------------------------------------------------------------------
-            // |     |  F1  |  F2  |  F3   |  F4   |  F5  |                |  F6  |  F7  |  F8   |  F9  |  F10  |  F11  |
-            // |     |      |      |       |       |      |                | PGUP |  END |   ^   | HOME |  INS  |  F12  |
-            // |     | RGBT | RGB- | RGB+  |  BR-  |  BR+ |                | PGDN |   <- |   v   | ->   |  DEL  | C/CAPS|
-            // |     |      | HUD  | HUI   |  SAD  |  SAI |      |  |      | SCRL | PRVS | PLAY  | NEXT |  PSCR |       |
-            //              |      |       |       |      |      |  |      |      |      |       |      |
-
             bindings = <
  &trans  &trans        &trans        &trans        &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -124,7 +193,7 @@
             bindings = <
       &kp GRAVE  &kp N1  &kp N2        &kp N3     &kp N4     &kp N5                  &trans      &trans  &trans  &trans  &trans  &trans
         &kp TAB   &kp Q   &kp W         &kp E      &kp R      &kp T                  &trans      &trans  &trans  &trans  &trans  &trans
-        &kp ESC   &kp A   &kp S         &kp D      &kp F      &kp G                  &trans  &umlaut_oe  &trans  &trans  &trans  &trans
+        &kp ESC   &kp A   &kp S         &kp D      &kp F      &kp G                  &trans      &trans  &trans  &trans  &trans  &trans
  &kp LEFT_SHIFT   &kp Z   &kp X         &kp C      &kp V      &kp B  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
                          &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &trans  &trans  &trans      &trans  &trans  &trans
             >;
