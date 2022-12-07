@@ -211,14 +211,16 @@
             >;
         };
 
-        Layer__5 {
+        lower_shift {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans    &kp F1    &kp F2    &kp F3    &kp F4     &kp F5                    &kp F6     &kp F7     &kp F8     &kp F9   &kp F10  &kp F11
+ &trans  &kp LBKT  &kp RBKT  &kp LPAR  &kp RPAR  &kp CARET                  &kp HOME  &kp PG_UP  &kp PG_DN    &kp END    &trans  &kp F12
+ &trans  &kp EXCL    &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                  &kp LEFT   &kp DOWN     &kp UP  &kp RIGHT  &kp BSLH  &kp INS
+ &trans    &trans    &trans    &trans    &trans     &trans  &trans  &trans  &kp AMPS   &kp LBRC   &kp RBRC   &kp PIPE  &kp STAR   &trans
+                     &trans    &trans    &trans     &trans  &trans  &trans    &trans     &trans     &trans     &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
         };
     };
 };
