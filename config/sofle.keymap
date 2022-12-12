@@ -28,6 +28,26 @@
             bindings = <&mo 4>;
             key-positions = <49 35>;
         };
+
+        chord_ue {
+            bindings = <&umlaut_ue>;
+            key-positions = <20 31>;
+        };
+
+        chord_oe {
+            bindings = <&umlaut_oe>;
+            key-positions = <34 31>;
+        };
+
+        chord_ae {
+            bindings = <&umlaut_ae>;
+            key-positions = <25 28>;
+        };
+
+        chord_ss {
+            bindings = <&umlaut_ss>;
+            key-positions = <27 28 53>;
+        };
     };
 
     macros {
@@ -114,7 +134,7 @@
                 <&macro_press>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_5 &kp KP_NUMBER_5>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_5 &kp KP_NUMBER_2>,
                 <&macro_release>,
                 <&kp LALT>;
 
