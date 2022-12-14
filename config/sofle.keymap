@@ -187,11 +187,11 @@
 
         raise {
             bindings = <
- &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                  &kp F6        &kp F7        &kp F8        &kp F9  &kp F10  &kp F11
- &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9   &trans  &kp F12
- &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6   &trans   &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &trans   &trans
-                 &trans  &trans  &trans  &trans   &to 0  &trans  &trans  &kp NUMBER_0     &kp COMMA       &kp DOT
+ &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                  &kp F6           &kp F7           &kp F8           &kp F9  &kp F10  &kp F11
+ &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &trans  &kp F12
+ &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &trans   &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &trans   &trans
+                 &trans  &trans  &trans  &trans   &to 0  &trans  &trans  &kp KP_NUMBER_0        &kp COMMA          &kp DOT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
