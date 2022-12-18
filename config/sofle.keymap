@@ -46,7 +46,7 @@
 
         chord_ss {
             bindings = <&umlaut_ss>;
-            key-positions = <27 28>;
+            key-positions = <27 37>;
         };
     };
 
@@ -170,7 +170,7 @@
                                      &kp LEFT_WIN      &kp LALT  &mt LGUI MINUS  &mt LSHFT SPACE     &mo 1      &tog 1  &mt RSHFT ENTER  &mt RGUI EQUAL   &kp RALT  &kp RCTRL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower {
@@ -182,7 +182,7 @@
                      &trans    &trans      &trans     &trans   &to 0  &tog 2     &trans    &trans    &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp PG_DN PG_UP>;
         };
 
         raise {
@@ -194,7 +194,7 @@
                  &trans  &trans  &trans  &trans   &to 0  &trans  &trans  &kp KP_NUMBER_0        &kp COMMA          &kp DOT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp PG_DN PG_UP>;
         };
 
         gaming {
@@ -206,7 +206,7 @@
                          &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp PG_DN PG_UP>;
         };
 
         settings {
@@ -221,14 +221,14 @@
 
         lower_shift {
             bindings = <
- &trans  &kp LS(F1)  &kp LS(F2)  &kp LS(F3)  &kp LS(F4)  &kp LS(F5)                    &kp LS(F6)     &kp LS(F7)     &kp LS(F8)     &kp LS(F9)  &kp LS(F10)  &kp LS(F11)
- &trans   &kp LS(Q)   &kp LS(W)   &kp LS(F)   &kp LS(P)   &kp LS(B)                  &kp LS(HOME)  &kp LS(PG_UP)  &kp LS(PG_DN)    &kp LS(END)       &trans  &kp LS(F12)
- &trans   &kp LS(A)   &kp LS(R)   &kp LS(S)   &kp LS(T)   &kp LS(G)                  &kp LS(LEFT)   &kp LS(DOWN)     &kp LS(UP)  &kp LS(RIGHT)       &trans       &trans
- &trans   &kp LS(Z)   &kp LS(X)   &kp LS(C)   &kp LS(D)   &kp LS(V)  &trans  &trans        &trans         &trans         &trans         &trans       &trans       &trans
-                         &trans      &trans      &trans      &trans  &trans  &trans        &trans         &trans         &trans         &trans
+ &trans  &kp LS(F1)  &kp LS(F2)  &kp LS(F3)  &kp LS(F4)  &kp LS(F5)                  &kp LS(F6)  &kp LS(F7)  &kp LS(F8)  &kp LS(F9)  &kp LS(F10)  &kp LS(F11)
+ &trans   &kp LS(Q)   &kp LS(W)   &kp LS(F)   &kp LS(P)   &kp LS(B)                      &trans      &trans      &trans      &trans       &trans  &kp LS(F12)
+ &trans   &kp LS(A)   &kp LS(R)   &kp LS(S)   &kp LS(T)   &kp LS(G)                      &trans      &trans      &trans      &trans       &trans       &trans
+ &trans   &kp LS(Z)   &kp LS(X)   &kp LS(C)   &kp LS(D)   &kp LS(V)  &trans  &trans      &trans      &trans      &trans      &trans       &trans       &trans
+                         &trans      &trans      &trans      &trans  &trans  &trans      &trans      &trans      &trans      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp PG_DN PG_UP>;
         };
     };
 };
