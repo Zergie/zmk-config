@@ -181,7 +181,7 @@
                                          &kp LEFT     &kp RIGHT  &mt LALT MINUS  &mt LSHFT SPACE     &mo 1  &lt 2 BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL  &kp UP_ARROW  &kp DOWN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower {
@@ -193,7 +193,7 @@
                      &trans    &trans      &trans       &trans   &to 0  &trans     &trans         &trans       &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
         };
 
         raise {
@@ -205,7 +205,7 @@
                  &trans  &trans   &trans   &trans   &to 0  &trans  &trans  &kp KP_NUMBER_0        &kp COMMA          &kp DOT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
         };
 
         gaming {
@@ -217,7 +217,7 @@
                          &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
         };
 
         settings {
@@ -231,3 +231,4 @@
         };
     };
 };
+
