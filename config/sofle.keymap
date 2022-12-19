@@ -181,19 +181,19 @@
                                      &kp LEFT_WIN        &tog 1  &mt LALT MINUS  &mt LSHFT SPACE     &mo 1  &kp BACKSPACE  &mt RSHFT ENTER  &mt RALT EQUAL      &none    &none
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower {
             bindings = <
- &trans    &trans    &trans    &trans      &trans     &trans                     &trans    &trans       &trans      &trans     &trans    &trans
- &trans  &kp LBKT  &kp RBKT  &kp LPAR    &kp RPAR  &kp CARET                  &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP &kp END    &kp INS   &trans
- &trans  &kp EXCL    &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                  &kp LEFT   &kp DOWN       &kp UP      &kp RIGHT  &kp BSLH  &trans
- &trans    &trans    &trans    &trans   &kp ASTRK     &trans  &trans  &trans   &kp AMPS  &kp LBRC       &kp RBRC    &kp PIPE    &trans   &trans
-                     &trans    &tog 2      &trans     &trans   &to 0  &trans     &trans    &trans       &trans      &trans
+ &kp F1    &kp F2    &kp F3    &kp F4      &kp F5     &kp F6                    &kp F7         &kp F8       &kp F9    &kp F10   &kp F11  &kp F12
+ &trans  &kp LBKT  &kp RBKT  &kp LPAR    &kp RPAR  &kp CARET                  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP    &kp END   &kp INS   &trans
+ &trans  &kp EXCL    &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                  &kp LEFT       &kp DOWN       &kp UP  &kp RIGHT  &kp BSLH   &trans
+ &trans    &trans    &trans    &trans   &kp ASTRK     &trans  &trans  &trans  &kp AMPS       &kp LBRC     &kp RBRC   &kp PIPE    &trans   &trans
+                     &trans    &tog 2      &trans     &trans   &to 0  &trans    &trans         &trans       &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp PG_DN PG_UP>;
         };
 
         raise {
@@ -205,7 +205,7 @@
                  &trans  &trans   &trans   &trans   &to 0  &trans  &trans  &kp KP_NUMBER_0        &kp COMMA          &kp DOT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp PG_DN PG_UP>;
         };
 
         gaming {
@@ -217,7 +217,7 @@
                          &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN,&inc_dec_kp PG_DN PG_UP>;
         };
 
         settings {
