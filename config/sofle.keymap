@@ -189,7 +189,7 @@
  &kp F1    &kp F2    &kp F3    &kp F4      &kp F5       &kp F6                     &kp F7         &kp F8       &kp F9   &kp F10   &kp F11               &kp F12
  &trans  &kp LBKT  &kp RBKT  &kp LPAR    &kp RPAR       &trans                   &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END   &kp INS            &kp LS(F2)
  &trans  &kp EXCL    &kp AT  &kp HASH  &kp DOLLAR    &kp PRCNT                  &kp CARET       &kp AMPS     &kp STAR  &kp PIPE  &kp BSLH  &mt RCTRL LS(LC(F2))
- &trans    &trans    &trans    &trans      &trans  &kp LS(INS)  &trans  &trans     &trans       &kp LBRC     &kp RBRC    &trans    &trans                &trans
+ &trans    &trans   &kp F24   &kp F23     &kp F22  &kp LS(INS)  &trans  &trans     &trans       &kp LBRC     &kp RBRC    &trans    &trans                &trans
                      &trans    &trans      &trans       &trans   &to 0  &trans     &trans         &trans       &trans    &trans
             >;
 
@@ -198,11 +198,11 @@
 
         raise {
             bindings = <
- &trans  &trans  &trans  &trans   &trans   &trans                  &trans           &trans           &trans           &trans  &trans  &trans
- &trans  &kp F1  &kp F2  &kp F3   &kp F4   &kp F5                  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans  &trans
- &trans  &kp F6  &kp F7  &kp F8   &kp F9  &kp F10                  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans
- &trans  &trans  &trans  &trans  &kp F11  &kp F12  &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans
-                 &trans  &trans   &trans   &trans   &to 0  &trans  &trans  &kp KP_NUMBER_0        &kp COMMA          &kp DOT
+ &trans   &trans   &trans   &trans   &trans   &trans                   &trans           &trans           &trans           &trans   &trans  &trans
+ &trans   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                  &kp F18  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp F21  &trans
+ &trans   &kp F6   &kp F7   &kp F8   &kp F9  &kp F10                  &kp F17  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp F20  &trans
+ &trans  &kp F15  &kp F14  &kp F13  &kp F12  &kp F11  &trans  &trans  &kp F16  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp F19  &trans
+                   &trans   &trans   &trans   &trans   &to 0  &trans   &trans  &kp KP_NUMBER_0        &kp COMMA          &kp DOT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
