@@ -186,11 +186,11 @@
 
         lower {
             bindings = <
-  &none     &none    &none                 &none                  &none           &none                            &none          &none          &none    &none     &none   &none
- &trans     &none    &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR                         &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP  &kp END   &kp INS   &none
- &trans  &kp EXCL   &kp AT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE                  &kp RIGHT_BRACE   &kp LC(LEFT)  &kp LC(RIGHT)    &none  &kp BSLH   &none
- &trans    &trans  &kp F24               &kp F23                &kp F22        &kp PIPE  &trans  &trans           &trans          &none          &none   &trans    &trans  &trans
-                    &trans                &trans                 &trans          &trans   &to 0  &trans           &trans         &trans         &trans   &trans
+  &none     &none    &none                 &none                  &none           &none                            &none          &none          &none             &none     &none   &none
+ &trans     &none    &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR                         &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP           &kp END   &kp INS   &none
+ &trans  &kp EXCL   &kp AT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE                  &kp RIGHT_BRACE   &kp LC(LEFT)  &kp LC(RIGHT)  &kp LG(NUMBER_2)  &kp BSLH   &none
+ &trans    &trans  &kp F24               &kp F23                &kp F22        &kp PIPE  &trans  &trans           &trans          &none          &none            &trans    &trans  &trans
+                    &trans                &trans                 &trans          &trans   &to 0  &trans           &trans         &trans         &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
