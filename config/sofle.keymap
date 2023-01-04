@@ -201,7 +201,7 @@
   &none    &none    &none              &none                &none    &none                    &none      &none      &none      &none    &none   &none
  &trans   &kp F1   &kp F2             &kp F3               &kp F4   &kp F5                  &kp F18   &kp HOME     &kp UP    &kp END  &kp F21  &trans
  &trans   &kp F6   &kp F7  &mt LEFT_SHIFT F8  &mt LEFT_CONTROL F9  &kp F10                  &kp F17   &kp LEFT   &kp DOWN  &kp RIGHT  &kp F20  &trans
- &trans  &kp F15  &kp F14            &kp F13              &kp F12  &kp F11  &trans  &trans  &kp F16  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp F19  &trans
+ &trans  &kp F15  &kp F14            &kp F13              &kp F12  &kp F11  &trans  &trans  &kp F16  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp F19  &trans
                    &trans             &trans               &trans   &trans   &to 0  &trans   &trans     &trans     &trans     &trans
             >;
 
