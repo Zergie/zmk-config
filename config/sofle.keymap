@@ -21,6 +21,27 @@
                 <&mo 1>,
                 <&kp ESC>;
         };
+        oe: oe {
+            compatible = "zmk,behavior-mod-morph";
+            label = "OE";
+            #binding-cells = <0>;
+            bindings = <&umlaut_oe>, <&umlaut_Oe_big>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        ae: ae {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AE";
+            #binding-cells = <0>;
+            bindings = <&umlaut_ae>, <&umlaut_Ae_big>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        ue: ue {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UE";
+            #binding-cells = <0>;
+            bindings = <&umlaut_ue>, <&umlaut_Ue_big>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -42,17 +63,17 @@
         };
 
         chord_ue {
-            bindings = <&umlaut_ue>;
+            bindings = <&ue>;
             key-positions = <20 31>;
         };
 
         chord_oe {
-            bindings = <&umlaut_oe>;
+            bindings = <&oe>;
             key-positions = <34 31>;
         };
 
         chord_ae {
-            bindings = <&umlaut_ae>;
+            bindings = <&ae>;
             key-positions = <25 28>;
         };
 
