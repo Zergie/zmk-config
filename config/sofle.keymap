@@ -11,6 +11,26 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    behaviors {
+
+        td_shft_spc: td_shft_spc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "td_shft_spc";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt LSHFT SPACE>, <&kp SPACE>;
+        };
+
+        td_mo1_esc: td_mo1_esc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "td_mo1_esc";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 1>, <&kp ESC>;
+        };
+
+    };
+
     combos {
         compatible = "zmk,combos";
 
