@@ -10,6 +10,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#define LEFT_HALF  0 1 2 3 4  5  12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 42 50 51 52 53 54
+#define RIGHT_HALF 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 43 44 45 46 47 48 49 55 56 57 58 59
+
 / {
     behaviors {
        td_mo1_esc: td_mo1_esc {
@@ -196,11 +199,16 @@
 
         default {
             bindings = <
-               &tog 2  &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3        &kp N4       &kp N5                                      &kp N6          &kp N7     &kp N8   &kp N9    &kp N0               &kp GRAVE
-              &kp TAB         &kp Q          &kp W             &kp F         &kp P        &kp B                                       &kp J           &kp L      &kp U    &kp Y  &kp SEMI                 &kp DEL
- &mt LEFT_CONTROL ESC         &kp A          &kp R             &kp S         &kp T        &kp G                                       &kp M           &kp N      &kp E    &kp I     &kp O  &mt RCTRL SINGLE_QUOTE
-         &kp LEFT_GUI         &kp Z          &kp X             &kp C         &kp D        &kp V  &kp C_PP       &kp C_MUTE            &kp K           &kp H  &kp COMMA  &kp DOT  &kp FSLH     &kp LC(PAUSE_BREAK)
-                                     &kp LS(LCTRL)  &kp LS(LEFT_ALT)  &mt LALT MINUS  &mt LSHFT SPACE  &td_mo1_esc  &lt 2 BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL   &kp DOWN   &kp UP
+/*|--------  0 --------|----  1 ----|----  2 -----|------  3 ------|-----  4 -----|------  5 -----|                           |------  6 -----|-----  7 -----|--  8 ---|--  9 -|-- 10 --|--------- 11 ---------|*/
+   &tog 2               &kp NUMBER_1 &kp NUMBER_2  &kp NUMBER_3     &kp N4         &kp N5                                      &kp N6          &kp N7         &kp N8    &kp N9  &kp N0   &kp GRAVE
+/*|-------- 12 --------|---- 13 ----|---- 14 -----|------ 15 ------|----- 16 -----|------ 17 -----|                           |------ 18 -----|----- 19 -----|-- 20 ---|-- 21 -|-- 22 --|--------- 23 ---------|*/
+   &kp TAB              &kp Q        &kp W         &kp F            &kp P          &kp B                                       &kp J           &kp L          &kp U     &kp Y   &kp SEMI &kp DEL
+/*|-------- 24 --------|---- 25 ----|---- 26 -----|------ 27 ------|----- 28 -----|------ 29 -----|                           |------ 30 -----|----- 31 -----|-- 32 ---|-- 33 -|-- 34 --|--------- 35 ---------|*/
+   &mt LEFT_CONTROL ESC &kp A        &kp R         &kp S            &kp T          &kp G                                       &kp M           &kp N          &kp E     &kp I   &kp O    &mt RCTRL SINGLE_QUOTE
+/*|-------- 36 --------|---- 37 ----|---- 38 -----|------ 39 ------|----- 40 -----|------ 41 -----|---- 42 ---|------ 43 -----|------ 44 -----|----- 45 -----|-- 46 ---|-- 47 -|-- 48 --|--------- 49 ---------|*/
+   &kp LEFT_GUI         &kp Z        &kp X         &kp C            &kp D          &kp V           &kp C_PP    &kp C_MUTE      &kp K           &kp H          &kp COMMA &kp DOT &kp FSLH &kp LC(PAUSE_BREAK)
+/*                                  |---- 50 -----|------ 51 ------|----- 52 -----|------ 53 -----|---- 54 ---|------ 55 -----|------ 56 -----|----- 57 -----|-- 58 ---|-- 59 -|                               |*/
+                                     &kp LS(LCTRL) &kp LS(LEFT_ALT) &mt LALT MINUS &mt LSHFT SPACE &td_mo1_esc &lt 2 BACKSPACE &mt RSHFT ENTER &mt LALT EQUAL &kp DOWN  &kp UP
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -208,11 +216,16 @@
 
         lower {
             bindings = <
-  &none     &none   &none                            &none                        &none           &none                            &none     &none          &none             &none     &none   &none
- &trans     &none  &trans                 &kp LEFT_BRACKET            &kp RIGHT_BRACKET      &kp DOLLAR                          &kp INS  &kp HOME         &kp UP           &kp END    &trans  &trans
- &trans  &kp EXCL  &kp AT  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp LEFT_BRACE                  &kp RIGHT_BRACE  &kp LEFT       &kp DOWN         &kp RIGHT  &kp BSLH  &trans
- &trans    &trans  &trans                          &kp F23                      &kp F22        &kp PIPE  &trans  &trans            &none     &none        &kp F24  &kp LG(NUMBER_2)    &trans  &trans
-                   &trans                           &trans                       &trans          &trans   &to 0  &trans           &trans    &trans  &kp PAGE_DOWN         &kp PG_UP
+/*|-  0 -|--  1 --|-  2 -|--------------  3 -------------|------------  4 -----------|-----  5 -----|             |------  6 -----|--  7 --|----  8 -----|------  9 ------|-- 10 --|- 11 -|*/
+   &none  &none    &none  &none                           &none                       &none                        &none           &none    &none         &none            &none    &none
+/*|- 12 -|-- 13 --|- 14 -|-------------- 15 -------------|------------ 16 -----------|----- 17 -----|             |------ 18 -----|-- 19 --|---- 20 -----|------ 21 ------|-- 22 --|- 23 -|*/
+   &trans &none    &trans &kp LEFT_BRACKET                &kp RIGHT_BRACKET           &kp DOLLAR                   &kp INS         &kp HOME &kp UP        &kp END          &trans   &trans
+/*|- 24 -|-- 25 --|- 26 -|-------------- 27 -------------|------------ 28 -----------|----- 29 -----|             |------ 30 -----|-- 31 --|---- 32 -----|------ 33 ------|-- 34 --|- 35 -|*/
+   &trans &kp EXCL &kp AT &mt LEFT_SHIFT LEFT_PARENTHESIS &mt LCTRL RIGHT_PARENTHESIS &kp LEFT_BRACE               &kp RIGHT_BRACE &kp LEFT &kp DOWN      &kp RIGHT        &kp BSLH &trans
+/*|- 36 -|-- 37 --|- 38 -|-------------- 39 -------------|------------ 40 -----------|----- 41 -----|- 42 -|- 43 -|------ 44 -----|-- 45 --|---- 46 -----|------ 47 ------|-- 48 --|- 49 -|*/
+   &trans &trans   &trans &kp F23                         &kp F22                     &kp PIPE       &trans &trans &none           &none    &kp F24       &kp LG(NUMBER_2) &trans   &trans
+/*                |- 50 -|-------------- 51 -------------|------------ 52 -----------|----- 53 -----|- 54 -|- 55 -|------ 56 -----|-- 57 --|---- 58 -----|------ 59 ------|               |*/
+                   &trans &trans                          &trans                      &trans         &to 0  &trans &trans          &trans   &kp PAGE_DOWN &kp PG_UP
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
@@ -220,11 +233,16 @@
 
         raise {
             bindings = <
-  &none    &none    &none              &none                &none    &none                    &none      &none      &none      &none    &none   &none
- &trans   &kp F1   &kp F2             &kp F3               &kp F4   &kp F5                  &kp F18   &kp HOME     &kp UP    &kp END  &kp F21  &trans
- &trans   &kp F6   &kp F7  &mt LEFT_SHIFT F8  &mt LEFT_CONTROL F9  &kp F10                  &kp F17   &kp LEFT   &kp DOWN  &kp RIGHT  &kp F20  &trans
- &trans  &kp F15  &kp F14            &kp F13              &kp F12  &kp F11  &trans  &trans  &kp F16  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp F19  &trans
-                   &trans             &trans               &trans   &trans   &to 0  &trans   &trans     &trans     &trans     &trans
+/*|-  0 -|--  1 -|--  2 -|------  3 -------|--------  4 -------|--  5 -|             |--  6 -|--  7 ---|--  8 ---|--  9 ---|-- 10 -|- 11 -|*/
+   &none  &none   &none   &none             &none               &none                 &none   &none     &none     &none     &none   &none
+/*|- 12 -|-- 13 -|-- 14 -|------ 15 -------|-------- 16 -------|-- 17 -|             |-- 18 -|-- 19 ---|-- 20 ---|-- 21 ---|-- 22 -|- 23 -|*/
+   &trans &kp F1  &kp F2  &kp F3            &kp F4              &kp F5                &kp F18 &kp HOME  &kp UP    &kp END   &kp F21 &trans
+/*|- 24 -|-- 25 -|-- 26 -|------ 27 -------|-------- 28 -------|-- 29 -|             |-- 30 -|-- 31 ---|-- 32 ---|-- 33 ---|-- 34 -|- 35 -|*/
+   &trans &kp F6  &kp F7  &mt LEFT_SHIFT F8 &mt LEFT_CONTROL F9 &kp F10               &kp F17 &kp LEFT  &kp DOWN  &kp RIGHT &kp F20 &trans
+/*|- 36 -|-- 37 -|-- 38 -|------ 39 -------|-------- 40 -------|-- 41 -|- 42 -|- 43 -|-- 44 -|-- 45 ---|-- 46 ---|-- 47 ---|-- 48 -|- 49 -|*/
+   &trans &kp F15 &kp F14 &kp F13           &kp F12             &kp F11 &trans &trans &kp F16 &kp LC(X) &kp LC(C) &kp LC(V) &kp F19 &trans
+/*               |-- 50 -|------ 51 -------|-------- 52 -------|-- 53 -|- 54 -|- 55 -|-- 56 -|-- 57 ---|-- 58 ---|-- 59 ---|              |*/
+                  &trans  &trans            &trans              &trans  &to 0  &trans &trans  &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
@@ -232,11 +250,16 @@
 
         gaming {
             bindings = <
-      &kp GRAVE  &kp N1  &kp N2        &kp N3     &kp N4     &kp N5                  &trans  &trans  &trans  &trans  &trans  &trans
-        &kp TAB   &kp Q   &kp W         &kp E      &kp R      &kp T                  &trans  &trans  &trans  &trans  &trans  &trans
-        &kp ESC   &kp A   &kp S         &kp D      &kp F      &kp G                  &trans  &trans  &trans  &trans  &trans  &trans
- &kp LEFT_SHIFT   &kp Z   &kp X         &kp C      &kp V      &kp B  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &trans  &trans  &trans  &trans  &trans  &trans
+/*|-----  0 -----|-  1 -|-  2 -|----  3 ----|--  4 ---|--  5 ---|             |-  6 -|-  7 -|-  8 -|-  9 -|- 10 -|- 11 -|*/
+   &kp GRAVE      &kp N1 &kp N2 &kp N3       &kp N4    &kp N5                  &trans &trans &trans &trans &trans &trans
+/*|----- 12 -----|- 13 -|- 14 -|---- 15 ----|-- 16 ---|-- 17 ---|             |- 18 -|- 19 -|- 20 -|- 21 -|- 22 -|- 23 -|*/
+   &kp TAB        &kp Q  &kp W  &kp E        &kp R     &kp T                   &trans &trans &trans &trans &trans &trans
+/*|----- 24 -----|- 25 -|- 26 -|---- 27 ----|-- 28 ---|-- 29 ---|             |- 30 -|- 31 -|- 32 -|- 33 -|- 34 -|- 35 -|*/
+   &kp ESC        &kp A  &kp S  &kp D        &kp F     &kp G                   &trans &trans &trans &trans &trans &trans
+/*|----- 36 -----|- 37 -|- 38 -|---- 39 ----|-- 40 ---|-- 41 ---|- 42 -|- 43 -|- 44 -|- 45 -|- 46 -|- 47 -|- 48 -|- 49 -|*/
+   &kp LEFT_SHIFT &kp Z  &kp X  &kp C        &kp V     &kp B     &trans &trans &trans &trans &trans &trans &trans &trans
+/*                      |- 50 -|---- 51 ----|-- 52 ---|-- 53 ---|- 54 -|- 55 -|- 56 -|- 57 -|- 58 -|- 59 -|             |*/
+                         &trans &kp LEFT_ALT &kp LCTRL &kp SPACE &trans &trans &trans &trans &trans &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
@@ -244,11 +267,16 @@
 
         settings {
             bindings = <
- &out OUT_BLE     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans  &trans
- &out OUT_USB       &bt BT_CLR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI                  &trans  &trans  &trans  &trans  &trans  &trans
- &out OUT_TOG  &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD                  &trans  &trans  &trans  &trans  &trans  &trans
-       &trans           &trans           &trans           &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans           &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+/*|----  0 ----|------  1 -----|------  2 -----|------  3 -----|------  4 -----|------  5 -----|             |-  6 -|-  7 -|-  8 -|-  9 -|- 10 -|- 11 -|*/
+   &out OUT_BLE &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                  &trans &trans &trans &trans &trans &trans
+/*|---- 12 ----|------ 13 -----|------ 14 -----|------ 15 -----|------ 16 -----|------ 17 -----|             |- 18 -|- 19 -|- 20 -|- 21 -|- 22 -|- 23 -|*/
+   &out OUT_USB &bt BT_CLR      &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI               &trans &trans &trans &trans &trans &trans
+/*|---- 24 ----|------ 25 -----|------ 26 -----|------ 27 -----|------ 28 -----|------ 29 -----|             |- 30 -|- 31 -|- 32 -|- 33 -|- 34 -|- 35 -|*/
+   &out OUT_TOG &rgb_ug RGB_TOG &rgb_ug RGB_EFR &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD               &trans &trans &trans &trans &trans &trans
+/*|---- 36 ----|------ 37 -----|------ 38 -----|------ 39 -----|------ 40 -----|------ 41 -----|- 42 -|- 43 -|- 44 -|- 45 -|- 46 -|- 47 -|- 48 -|- 49 -|*/
+   &trans       &trans          &trans          &trans          &trans          &trans          &trans &trans &trans &trans &trans &trans &trans &trans
+/*                             |------ 50 -----|------ 51 -----|------ 52 -----|------ 53 -----|- 54 -|- 55 -|- 56 -|- 57 -|- 58 -|- 59 -|             |*/
+                                &trans          &trans          &trans          &trans          &trans &trans &trans &trans &trans &trans
             >;
         };
     };
