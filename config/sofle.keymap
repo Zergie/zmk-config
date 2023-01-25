@@ -242,10 +242,10 @@
 
         lower {
             bindings = <
-  &none            &none              &none                            &none                        &none           &none                            &none      &none     &none             &none     &none   &none
- &trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                 &kp LEFT_BRACKET            &kp RIGHT_BRACKET      &kp DOLLAR                          &kp INS   &kp HOME    &kp UP           &kp END     &none  &trans
- &trans         &kp EXCL             &kp AT  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp LEFT_BRACE                  &kp RIGHT_BRACE   &kp LEFT  &kp DOWN         &kp RIGHT  &kp BSLH  &trans
- &trans            &none              &none                          &kp F23                      &kp F22        &kp PIPE  &trans  &trans    &kp LG(SPACE)  &kp LG(T)   &kp F24  &kp LG(NUMBER_2)     &none  &trans
+  &none            &none              &none                            &none                        &none           &none                            &none      &none     &none             &none        &none   &none
+ &trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                 &kp LEFT_BRACKET            &kp RIGHT_BRACKET      &kp DOLLAR                          &kp INS   &kp HOME    &kp UP           &kp END  &kp LS(TAB)  &trans
+ &trans         &kp EXCL             &kp AT  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp LEFT_BRACE                  &kp RIGHT_BRACE   &kp LEFT  &kp DOWN         &kp RIGHT     &kp BSLH  &trans
+ &trans            &none              &none                          &kp F23                      &kp F22        &kp PIPE  &trans  &trans    &kp LG(SPACE)  &kp LG(T)   &kp F24  &kp LG(NUMBER_2)        &none  &trans
                                      &trans                           &trans                       &trans          &trans   &to 0  &trans           &trans     &trans     &none             &none
             >;
 
