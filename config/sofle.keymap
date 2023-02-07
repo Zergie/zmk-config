@@ -62,12 +62,7 @@
         timeout-ms = <25>;
 
         to_GamingLayer {
-            bindings = <&to 3>;
-            key-positions = <0 2>;
-        };
-
-        reset_layers {
-            bindings = <&to 0>;
+            bindings = <&kp KP_NUMLOCK>;
             key-positions = <0 1>;
         };
 
@@ -230,11 +225,11 @@
 
         default {
             bindings = <
-       &tog 2  &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3           &kp N4           &kp N5                                         &kp N6          &kp N7     &kp N8   &kp N9    &kp N0               &kp GRAVE
-      &kp ESC         &kp Q          &kp W             &kp F            &kp P            &kp B                                          &kp J           &kp L      &kp U    &kp Y  &kp SEMI                 &kp DEL
-      &kp TAB         &kp A          &kp R             &kp S            &kp T            &kp G                                          &kp M           &kp N      &kp E    &kp I     &kp O  &mt RCTRL SINGLE_QUOTE
- &kp LEFT_GUI         &kp Z          &kp X             &kp C            &kp D            &kp V     &kp K_PP       &kp C_MUTE            &kp K           &kp H  &kp COMMA  &kp DOT  &kp FSLH     &kp LC(PAUSE_BREAK)
-                             &kp LS(LCTRL)  &kp LS(LEFT_ALT)  &mt LCTRL MINUS  &mt LSHFT SPACE  &td_mo1_esc  &lt 2 BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL   &kp DOWN   &kp UP
+      &tog 2  &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3           &kp N4           &kp N5                                         &kp N6          &kp N7     &kp N8   &kp N9    &kp N0               &kp GRAVE
+     &kp ESC         &kp Q          &kp W             &kp F            &kp P            &kp B                                          &kp J           &kp L      &kp U    &kp Y  &kp SEMI                 &kp DEL
+     &kp TAB         &kp A          &kp R             &kp S            &kp T            &kp G                                          &kp M           &kp N      &kp E    &kp I     &kp O  &mt RCTRL SINGLE_QUOTE
+&kp LEFT_GUI         &kp Z          &kp X             &kp C            &kp D            &kp V     &kp K_PP       &kp C_MUTE            &kp K           &kp H  &kp COMMA  &kp DOT  &kp FSLH     &kp LC(PAUSE_BREAK)
+                            &kp LS(LCTRL)  &kp LS(LEFT_ALT)  &mt LCTRL MINUS  &mt LSHFT SPACE  &td_mo1_esc  &lt 2 BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL   &kp DOWN   &kp UP
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -242,11 +237,11 @@
 
         lower {
             bindings = <
-  &none            &none              &none                            &none                        &none           &none                            &none      &none     &none             &none        &none   &none
- &trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                 &kp LEFT_BRACKET            &kp RIGHT_BRACKET      &kp DOLLAR                          &kp INS   &kp HOME    &kp UP           &kp END  &kp LA(TAB)  &trans
- &trans         &kp EXCL             &kp AT  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp LEFT_BRACE                  &kp RIGHT_BRACE   &kp LEFT  &kp DOWN         &kp RIGHT     &kp BSLH  &trans
- &trans     &kp LA(LEFT)      &kp LA(RIGHT)                          &kp F23                      &kp F22        &kp PIPE  &trans  &trans    &kp LG(SPACE)  &kp LG(T)   &kp F24  &kp LG(NUMBER_2)        &none  &trans
-                                     &trans                           &trans                       &trans          &trans   &to 0  &trans           &trans     &trans     &none             &none
+ &none            &none              &none                            &none                        &none           &none                            &none      &none     &none             &none        &none   &none
+&trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                 &kp LEFT_BRACKET            &kp RIGHT_BRACKET      &kp DOLLAR                          &kp INS   &kp HOME    &kp UP           &kp END  &kp LA(TAB)  &trans
+&trans         &kp EXCL             &kp AT  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp LEFT_BRACE                  &kp RIGHT_BRACE   &kp LEFT  &kp DOWN         &kp RIGHT     &kp BSLH  &trans
+&trans     &kp LA(LEFT)      &kp LA(RIGHT)                          &kp F23                      &kp F22        &kp PIPE  &trans  &trans    &kp LG(SPACE)  &kp LG(T)   &kp F24  &kp LG(NUMBER_2)        &none  &trans
+                                    &trans                           &trans                       &trans          &trans   &to 0  &trans           &trans     &trans     &none             &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
@@ -254,23 +249,11 @@
 
         raise {
             bindings = <
-  &none    &none  &kp LS(LC(F2))         &kp LC(F4)           &kp LA(F4)    &none                    &none     &none     &none      &none    &none   &none
- &trans   &kp F1          &kp F2             &kp F3               &kp F4   &kp F5                  &kp F18  &kp HOME    &kp UP    &kp END  &kp F21  &trans
- &trans   &kp F6          &kp F7  &mt LEFT_SHIFT F8  &mt LEFT_CONTROL F9  &kp F10                  &kp F17  &kp LEFT  &kp DOWN  &kp RIGHT  &kp F20  &trans
- &trans  &kp F15         &kp F14            &kp F13              &kp F12  &kp F11  &trans  &trans  &kp F16     &none     &none      &none  &kp F19  &trans
-                          &trans             &trans               &trans   &trans   &to 0  &trans   &trans    &trans    &trans     &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
-        };
-
-        gaming {
-            bindings = <
-      &kp GRAVE  &kp N1  &kp N2        &kp N3     &kp N4     &kp N5                  &trans  &trans  &trans  &trans  &trans  &trans
-        &kp TAB   &kp Q   &kp W         &kp E      &kp R      &kp T                  &trans  &trans  &trans  &trans  &trans  &trans
-        &kp ESC   &kp A   &kp S         &kp D      &kp F      &kp G                  &trans  &trans  &trans  &trans  &trans  &trans
- &kp LEFT_SHIFT   &kp Z   &kp X         &kp C      &kp V      &kp B  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &trans  &trans  &trans  &trans  &trans  &trans
+ &none    &none  &kp LS(LC(F2))         &kp LC(F4)           &kp LA(F4)    &none                    &none     &none     &none      &none    &none   &none
+&trans   &kp F1          &kp F2             &kp F3               &kp F4   &kp F5                  &kp F18  &kp HOME    &kp UP    &kp END  &kp F21  &trans
+&trans   &kp F6          &kp F7  &mt LEFT_SHIFT F8  &mt LEFT_CONTROL F9  &kp F10                  &kp F17  &kp LEFT  &kp DOWN  &kp RIGHT  &kp F20  &trans
+&trans  &kp F15         &kp F14            &kp F13              &kp F12  &kp F11  &trans  &trans  &kp F16     &none     &none      &none  &kp F19  &trans
+                         &trans             &trans               &trans   &trans   &to 0  &trans   &trans    &trans    &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
@@ -278,11 +261,11 @@
 
         settings {
             bindings = <
- &out OUT_BLE     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans  &trans
- &out OUT_USB       &bt BT_CLR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI                  &trans  &trans  &trans  &trans  &trans  &trans
- &out OUT_TOG  &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD                  &trans  &trans  &trans  &trans  &trans  &trans
-       &trans           &trans           &trans           &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans           &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&out OUT_BLE     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                  &trans  &trans  &trans  &trans  &trans  &trans
+&out OUT_USB       &bt BT_CLR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI                  &trans  &trans  &trans  &trans  &trans  &trans
+&out OUT_TOG  &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD                  &trans  &trans  &trans  &trans  &trans  &trans
+      &trans           &trans           &trans           &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans           &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
