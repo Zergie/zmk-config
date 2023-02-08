@@ -61,7 +61,7 @@
         compatible = "zmk,combos";
         timeout-ms = <25>;
 
-        to_GamingLayer {
+        toggle_numpad {
             bindings = <&kp KP_NUMLOCK>;
             key-positions = <0 1>;
         };
@@ -89,26 +89,6 @@
         chord_ss {
             bindings = <&umlaut_ss>;
             key-positions = <27 37>;
-        };
-
-        chord_ctrl1 {
-            bindings = <&kp LCTRL>;
-            key-positions = <31 32>;
-        };
-
-        chord_ctrl2 {
-            bindings = <&kp LCTRL>;
-            key-positions = <27 28>;
-        };
-
-        chord_alt1 {
-            bindings = <&kp LALT>;
-            key-positions = <31 33>;
-        };
-
-        chord_alt2 {
-            bindings = <&kp LALT>;
-            key-positions = <28 26>;
         };
     };
 
@@ -225,11 +205,11 @@
 
         default {
             bindings = <
-      &tog 2  &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3           &kp N4           &kp N5                                         &kp N6          &kp N7     &kp N8   &kp N9    &kp N0               &kp GRAVE
-     &kp ESC         &kp Q          &kp W             &kp F            &kp P            &kp B                                          &kp J           &kp L      &kp U    &kp Y  &kp SEMI                 &kp DEL
-     &kp TAB         &kp A          &kp R             &kp S            &kp T            &kp G                                          &kp M           &kp N      &kp E    &kp I     &kp O  &mt RCTRL SINGLE_QUOTE
-&kp LEFT_GUI         &kp Z          &kp X             &kp C            &kp D            &kp V     &kp K_PP       &kp C_MUTE            &kp K           &kp H  &kp COMMA  &kp DOT  &kp FSLH     &kp LC(PAUSE_BREAK)
-                            &kp LS(LCTRL)  &kp LS(LEFT_ALT)  &mt LCTRL MINUS  &mt LSHFT SPACE  &td_mo1_esc  &lt 2 BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL   &kp DOWN   &kp UP
+   &tog 2  &kp NUMBER_1   &kp NUMBER_2      &kp NUMBER_3              &kp N4           &kp N5                                      &kp N6          &kp N7        &kp N8   &kp N9    &kp N0         &kp GRAVE
+  &kp ESC         &kp Q          &kp W             &kp F               &kp P            &kp B                                       &kp J           &kp L         &kp U    &kp Y  &kp SEMI           &kp DEL
+  &kp TAB         &kp A          &kp R             &kp S               &kp T            &kp G                                       &kp M           &kp N         &kp E    &kp I     &kp O  &kp SINGLE_QUOTE
+&kp LCTRL         &kp Z          &kp X             &kp C               &kp D            &kp V  &kp K_PP       &kp C_MUTE            &kp K           &kp H     &kp COMMA  &kp DOT  &kp FSLH         &kp RCTRL
+                         &kp LS(LCTRL)  &kp LS(LEFT_ALT)  &mt LEFT_ALT MINUS  &mt LSHFT SPACE     &mo 1  &lt 2 BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL  &kp LEFT_GUI    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -237,11 +217,11 @@
 
         lower {
             bindings = <
- &none            &none              &none                            &none                        &none           &none                            &none      &none     &none             &none        &none   &none
-&trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                 &kp LEFT_BRACKET            &kp RIGHT_BRACKET      &kp DOLLAR                          &kp INS   &kp HOME    &kp UP           &kp END  &kp LA(TAB)  &trans
-&trans         &kp EXCL             &kp AT  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LCTRL RIGHT_PARENTHESIS  &kp LEFT_BRACE                  &kp RIGHT_BRACE   &kp LEFT  &kp DOWN         &kp RIGHT     &kp BSLH  &trans
-&trans     &kp LA(LEFT)      &kp LA(RIGHT)                          &kp F23                      &kp F22        &kp PIPE  &trans  &trans    &kp LG(SPACE)  &kp LG(T)   &kp F24  &kp LG(NUMBER_2)        &none  &trans
-                                    &trans                           &trans                       &trans          &trans   &to 0  &trans           &trans     &trans     &none             &none
+ &none            &none                &none                 &none                  &none           &none                            &none      &none     &none             &none        &none   &none
+&trans  &kp LC(PAGE_UP)    &kp LC(PAGE_DOWN)      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR                          &kp INS   &kp HOME    &kp UP           &kp END  &kp LA(TAB)  &trans
+&trans         &kp EXCL               &kp AT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE                  &kp RIGHT_BRACE   &kp LEFT  &kp DOWN         &kp RIGHT     &kp BSLH  &trans
+&trans            &none  &kp LC(PAUSE_BREAK)          &kp LA(LEFT)          &kp LA(RIGHT)        &kp PIPE  &trans  &trans    &kp LG(SPACE)  &kp LG(T)   &kp F24  &kp LG(NUMBER_2)        &none  &trans
+                                      &trans                &trans                 &trans          &trans   &to 0  &trans           &trans     &trans     &none             &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
