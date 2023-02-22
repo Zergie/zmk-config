@@ -217,11 +217,11 @@
 
         lower {
             bindings = <
- &none            &none                &none                 &none                  &none           &none                            &none      &none     &none             &none        &none   &none
-&trans  &kp LC(PAGE_UP)    &kp LC(PAGE_DOWN)      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR                          &kp INS   &kp HOME    &kp UP           &kp END  &kp LA(TAB)  &trans
-&trans         &kp EXCL               &kp AT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE                  &kp RIGHT_BRACE   &kp LEFT  &kp DOWN         &kp RIGHT     &kp BSLH  &trans
-&trans            &none  &kp LC(PAUSE_BREAK)          &kp LA(LEFT)          &kp LA(RIGHT)        &kp PIPE  &trans  &trans    &kp LG(SPACE)  &kp LG(T)   &kp F24  &kp LG(NUMBER_2)        &none  &trans
-                                      &trans                &trans                 &trans          &trans   &to 0  &trans           &trans     &trans    &trans            &trans
+ &none            &none                &none                 &none                  &none           &none                            &none         &none         &none             &none        &none   &none
+&trans  &kp LC(PAGE_UP)    &kp LC(PAGE_DOWN)      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR                          &kp INS      &kp HOME    &kp LC(UP)           &kp END  &kp LA(TAB)  &trans
+&trans         &kp EXCL               &kp AT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE                  &kp RIGHT_BRACE  &kp LC(LEFT)  &kp LC(DOWN)     &kp LC(RIGHT)     &kp BSLH  &trans
+&trans            &none  &kp LC(PAUSE_BREAK)          &kp LA(LEFT)          &kp LA(RIGHT)        &kp PIPE  &trans  &trans    &kp LG(SPACE)     &kp LG(T)       &kp F24  &kp LG(NUMBER_2)        &none  &trans
+                                      &trans                &trans                 &trans          &trans   &to 0  &trans           &trans        &trans        &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
