@@ -67,7 +67,7 @@
         };
 
         mo_settings {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <49 35>;
         };
 
