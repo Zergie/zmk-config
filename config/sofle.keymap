@@ -16,15 +16,6 @@
 
 / {
     behaviors {
-        td_mo1_esc: td_mo1_esc {
-            compatible = "zmk,behavior-tap-dance";
-            label = "td_mo1_esc";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =
-                <&mo 1>,
-                <&kp ESC>;
-        };
         oe: oe {
             compatible = "zmk,behavior-mod-morph";
             label = "OE";
@@ -85,8 +76,8 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
         umlaut_Oe_big: umlaut_Oe_big {
             compatible = "zmk,behavior-macro";
@@ -100,8 +91,8 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
         umlaut_Ue_big: umlaut_Ue_big {
             compatible = "zmk,behavior-macro";
@@ -115,8 +106,8 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
         umlaut_ae: umlaut_ae {
             compatible = "zmk,behavior-macro";
@@ -130,8 +121,8 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
         umlaut_oe: umlaut_oe {
             compatible = "zmk,behavior-macro";
@@ -145,8 +136,8 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
         umlaut_ue: umlaut_ue {
             compatible = "zmk,behavior-macro";
@@ -160,8 +151,8 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
         umlaut_ss: umlaut_ss {
             compatible = "zmk,behavior-macro";
@@ -175,8 +166,8 @@
                 <&macro_release>,
                 <&kp LALT>;
 
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
         };
     };
 
