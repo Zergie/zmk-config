@@ -176,11 +176,11 @@
 
         default {
             bindings = <
-   &tog 2  &kp NUMBER_1              &kp NUMBER_2          &kp NUMBER_3              &kp N4                &kp N5                                       &kp N6          &kp N7        &kp N8   &kp N9    &kp N0         &kp GRAVE
-  &kp ESC         &kp Q                     &kp W                 &kp F               &kp P                 &kp B                                        &kp J           &kp L         &kp U    &kp Y  &kp SEMI           &kp DEL
-  &kp TAB         &kp A                     &kp R                 &kp S               &kp T                 &kp G                                        &kp M           &kp N         &kp E    &kp I     &kp O  &kp SINGLE_QUOTE
-&kp LCTRL         &kp Z                     &kp X                 &kp C               &kp D                 &kp V   &kp C_PP       &kp C_MUTE            &kp K           &kp H     &kp COMMA  &kp DOT  &kp FSLH         &kp RCTRL
-                         &kp LS(LG(LC(LEFT_ALT)))  &kp LC(LG(LEFT_ALT))  &mt LEFT_ALT MINUS  &mt LEFT_SHIFT SPACE  &lt 1 TAB  &lt 2 BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL  &kp LEFT_GUI    &none
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3              &kp N4                &kp N5                                       &kp N6          &kp N7        &kp N8   &kp N9    &kp N0         &kp MINUS
+  &kp ESC         &kp Q         &kp W                 &kp F               &kp P                 &kp B                                        &kp J           &kp L         &kp U    &kp Y  &kp SEMI           &kp DEL
+  &kp TAB         &kp A         &kp R                 &kp S               &kp T                 &kp G                                        &kp M           &kp N         &kp E    &kp I     &kp O  &kp SINGLE_QUOTE
+&kp LCTRL         &kp Z         &kp X                 &kp C               &kp D                 &kp V   &kp C_PP       &kp C_MUTE            &kp K           &kp H     &kp COMMA  &kp DOT  &kp FSLH         &kp RCTRL
+                               &tog 2  &kp LC(LG(LEFT_ALT))  &mt LEFT_ALT MINUS  &mt LEFT_SHIFT SPACE  &lt 1 TAB  &lt 2 BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL  &kp LEFT_GUI    &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -188,7 +188,7 @@
 
         lower {
             bindings = <
- &to 1            &none                &none                 &none                  &none           &none                            &none      &none     &none             &none        &none       &none
+ &none            &none                &none                 &none                  &none           &none                            &none      &none     &none             &none    &kp MINUS   &kp EQUAL
 &trans  &kp LC(PAGE_UP)    &kp LC(PAGE_DOWN)      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOLLAR                          &kp INS   &kp HOME    &kp UP           &kp END  &kp LA(TAB)  &kp C_NEXT
 &trans         &kp EXCL               &kp AT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE                  &kp RIGHT_BRACE   &kp LEFT  &kp DOWN         &kp RIGHT     &kp BSLH  &kp C_PREV
 &trans            &none  &kp LC(PAUSE_BREAK)          &kp LA(LEFT)          &kp LA(RIGHT)        &kp PIPE  &trans  &trans    &kp LG(SPACE)  &kp LG(T)   &kp F24  &kp LG(NUMBER_2)        &none      &trans
