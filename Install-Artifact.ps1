@@ -1,3 +1,4 @@
+Push-Location $PSScriptRoot
 Remove-Item *.uf2 -ErrorAction SilentlyContinue
 gh run download
 
@@ -18,4 +19,5 @@ Write-Host "Copying firmeware..."
 $file = Get-ChildItem *_left-*.uf2
 Copy-Item $file "$($nicenano.DriveLetter):\"
 
+Pop-Location
 Write-Host "All done." -ForegroundColor Green
