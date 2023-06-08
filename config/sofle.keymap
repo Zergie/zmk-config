@@ -62,9 +62,9 @@
             key-positions = <49 35>;
         };
 
-        new_combo {
+        toggle_qwerty {
             bindings = <&tog 5>;
-            key-positions = <50 59>;
+            key-positions = <36 49>;
         };
     };
 
