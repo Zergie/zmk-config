@@ -207,11 +207,11 @@
 
         raise {
             bindings = <
- &none    &none  &kp LS(LC(F2))         &kp LC(F4)           &kp LA(F4)    &none                      &none          &none    &none    &none    &none   &none
- &to 0   &kp F1          &kp F2             &kp F3               &kp F4   &kp F5                  &kp PG_UP        &kp F23  &kp F17  &kp F18    &none  &trans
-&trans   &kp F6          &kp F7  &mt LEFT_SHIFT F8  &mt LEFT_CONTROL F9  &kp F10                  &kp PG_DN  &kp LA(LG(C))  &kp F22      &oe  &kp F19  &trans
-&trans  &kp F15         &kp F14            &kp F13              &kp F12  &kp F11  &trans  &trans    &kp F16     &umlaut_ss      &ue      &ae  &kp F20  &trans
-                         &trans             &trans               &trans   &trans  &trans  &trans     &trans         &trans   &trans   &trans
+ &none    &none  &kp LS(LC(F2))  &kp LC(F4)  &kp LA(F4)    &none                      &none          &none    &none    &none    &none   &none
+ &to 0   &kp F1          &kp F2      &kp F3      &kp F4   &kp F5                  &kp PG_UP        &kp F23  &kp F17  &kp F18    &none  &trans
+&trans   &kp F6          &kp F7      &kp F8      &kp F9  &kp F10                  &kp PG_DN  &kp LA(LG(C))  &kp F22      &oe  &kp F19  &trans
+&trans  &kp F15         &kp F14     &kp F13     &kp F12  &kp F11  &trans  &trans    &kp F16     &umlaut_ss      &ue      &ae  &kp F20  &trans
+                         &trans      &trans      &trans   &trans  &trans  &trans     &trans         &trans   &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
