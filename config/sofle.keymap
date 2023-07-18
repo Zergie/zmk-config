@@ -174,6 +174,38 @@
             wait-ms = <5>;
             tap-ms = <5>;
         };
+        mon_1: mon_1 {
+            compatible = "zmk,behavior-macro";
+            label = "MON_1";
+            #binding-cells = <0>;
+            bindings = <&kp LG(P) &kp HOME &kp ENTER>;
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
+        mon_2: mon_2 {
+            compatible = "zmk,behavior-macro";
+            label = "MON_2";
+            #binding-cells = <0>;
+            bindings = <&kp LG(P) &kp HOME &kp DOWN_ARROW &kp ENTER>;
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
+        mon_3: mon_3 {
+            compatible = "zmk,behavior-macro";
+            label = "MON_3";
+            #binding-cells = <0>;
+            bindings = <&kp LG(P) &kp END &kp UP_ARROW &kp ENTER>;
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
+        mon_4: mon_4 {
+            compatible = "zmk,behavior-macro";
+            label = "MON_4";
+            #binding-cells = <0>;
+            bindings = <&kp LG(P) &kp END &kp ENTER>;
+            wait-ms = <5>;
+            tap-ms = <5>;
+        };
     };
 
     keymap {
@@ -222,7 +254,7 @@
 &out OUT_BLE     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                &none  &none  &none  &none  &none  &none
 &out OUT_USB       &bt BT_CLR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI                &none  &none  &none  &none  &none  &none
 &out OUT_TOG  &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD                &none  &none  &none  &none  &none  &none
-       &none            &none            &none            &none            &none            &none  &none  &none  &none  &none  &none  &none  &none  &none
+       &none           &mon_1           &mon_2           &mon_3           &mon_4            &none  &none  &none  &none  &none  &none  &none  &none  &none
                                          &none            &none            &none            &none  &none  &none  &none  &none  &none  &none
             >;
         };
