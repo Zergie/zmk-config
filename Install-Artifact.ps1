@@ -1,7 +1,7 @@
 Push-Location $PSScriptRoot
 Remove-Item *.uf2 -ErrorAction SilentlyContinue
-gh run download
-
+$runid = (gh run list --json databaseId --limit 1 | ConvertFrom-Json).databaseId
+gh run download $runid --name firmware
 Write-Host
 
 do {
