@@ -180,10 +180,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&macro_wait_time 1000>,
+                <&macro_wait_time 500>,
                 <&kp LG(P)>,
                 <&macro_wait_time 100>,
-                <&kp HOME &kp ENTER>;
+                <&kp HOME &kp ENTER &kp ESC>;
 
             wait-ms = <100>;
             tap-ms = <5>;
@@ -194,10 +194,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&macro_wait_time 1000>,
+                <&macro_wait_time 500>,
                 <&kp LG(P)>,
                 <&macro_wait_time 100>,
-                <&kp HOME &kp DOWN_ARROW &kp ENTER>;
+                <&kp HOME &kp DOWN_ARROW &kp ENTER &kp ESC>;
 
             wait-ms = <100>;
             tap-ms = <5>;
@@ -206,7 +206,13 @@
             compatible = "zmk,behavior-macro";
             label = "MON_3";
             #binding-cells = <0>;
-            bindings = <&kp LG(P) &kp END &kp UP_ARROW &kp ENTER>;
+            bindings =
+                <&macro_tap>,
+                <&macro_wait_time 500>,
+                <&kp LG(P)>,
+                <&macro_wait_time 100>,
+                <&kp END &kp UP_ARROW &kp ENTER &kp ESC>;
+
             wait-ms = <100>;
             tap-ms = <5>;
         };
@@ -214,7 +220,13 @@
             compatible = "zmk,behavior-macro";
             label = "MON_4";
             #binding-cells = <0>;
-            bindings = <&kp LG(P) &kp END &kp ENTER>;
+            bindings =
+                <&macro_tap>,
+                <&macro_wait_time 500>,
+                <&kp LG(P)>,
+                <&macro_wait_time 100>,
+                <&kp END &kp ENTER &kp ESC>;
+
             wait-ms = <100>;
             tap-ms = <5>;
         };
