@@ -179,11 +179,12 @@
             label = "MON_1";
             #binding-cells = <0>;
             bindings =
+                <&macro_tap>,
                 <&kp LG(P)>,
                 <&macro_wait_time 100>,
                 <&kp HOME &kp ENTER>;
 
-            wait-ms = <5>;
+            wait-ms = <20>;
             tap-ms = <5>;
         };
         mon_2: mon_2 {
@@ -191,11 +192,12 @@
             label = "MON_2";
             #binding-cells = <0>;
             bindings =
+                <&macro_tap>,
                 <&kp LG(P)>,
                 <&macro_wait_time 100>,
                 <&kp HOME &kp DOWN_ARROW &kp ENTER>;
 
-            wait-ms = <5>;
+            wait-ms = <20>;
             tap-ms = <5>;
         };
         mon_3: mon_3 {
