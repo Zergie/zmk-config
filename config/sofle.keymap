@@ -261,10 +261,10 @@
 
         default {
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3              &kp N4                &kp N5                                           &kp N6          &kp N7        &kp N8   &kp N9    &kp N0         &kp MINUS
-  &kp ESC         &kp Q         &kp W                 &kp F               &kp P                 &kp B                                            &kp J           &kp L         &kp U    &kp Y  &kp SEMI           &kp DEL
-    &mo 2         &kp A         &kp R                 &kp S               &kp T                 &kp G                                            &kp M           &kp N         &kp E    &kp I     &kp O  &kp SINGLE_QUOTE
-&kp LCTRL         &kp Z         &kp X                 &kp C               &kp D                 &kp V  &kp LS(LC(F24))    &kp LA(F24)            &kp K           &kp H     &kp COMMA  &kp DOT  &kp FSLH         &kp RCTRL
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3              &kp N4                &kp N5                                           &kp N6          &kp N7        &kp N8   &kp N9    &kp N0           &kp MINUS
+  &kp ESC         &kp Q         &kp W                 &kp F               &kp P                 &kp B                                            &kp J           &kp L         &kp U    &kp Y  &kp SEMI             &kp DEL
+    &mo 2         &kp A         &kp R                 &kp S               &kp T                 &kp G                                            &kp M           &kp N         &kp E    &kp I     &kp O  &lt 3 SINGLE_QUOTE
+&kp LCTRL         &kp Z         &kp X                 &kp C               &kp D                 &kp V  &kp LS(LC(F24))    &kp LA(F24)            &kp K           &kp H     &kp COMMA  &kp DOT  &kp FSLH           &kp RCTRL
                                &tog 2  &kp LC(LG(LEFT_ALT))  &mt LEFT_ALT MINUS  &mt LEFT_SHIFT SPACE        &lt 1 TAB  &kp BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL  &kp LEFT_GUI   &tog 4
             >;
 
