@@ -1,3 +1,10 @@
+[cmdletbinding()]
+param(
+    [Parameter()]
+    [switch]
+    $Right
+)
+
 Push-Location $PSScriptRoot
 Remove-Item *.uf2 -ErrorAction SilentlyContinue
 $runid = (gh run list --json databaseId --limit 1 | ConvertFrom-Json).databaseId
@@ -16,7 +23,11 @@ Start-Sleep -Seconds 2
 
 Write-Host
 Write-Host "Copying firmeware..."
-$file = Get-ChildItem *_left-*.uf2
+if ($Right) {
+    $file = Get-ChildItem *_right-*.uf2
+} else {
+    $file = Get-ChildItem *_left-*.uf2
+}
 Copy-Item $file "$($nicenano.DriveLetter):\"
 
 Pop-Location
