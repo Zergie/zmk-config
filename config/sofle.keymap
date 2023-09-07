@@ -261,11 +261,16 @@
 
         default {
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3              &kp N4                &kp N5                                           &kp N6          &kp N7        &kp N8   &kp N9    &kp N0           &kp MINUS
-  &kp ESC         &kp Q         &kp W                 &kp F               &kp P                 &kp B                                            &kp J           &kp L         &kp U    &kp Y  &kp SEMI             &kp DEL
-    &mo 2         &kp A         &kp R                 &kp S               &kp T                 &kp G                                            &kp M           &kp N         &kp E    &kp I     &kp O  &lt 3 SINGLE_QUOTE
-&kp LCTRL         &kp Z         &kp X                 &kp C               &kp D                 &kp V  &kp LS(LC(F24))    &kp LA(F24)            &kp K           &kp H     &kp COMMA  &kp DOT  &kp FSLH           &kp RCTRL
-                               &tog 2  &kp LC(LG(LEFT_ALT))  &mt LEFT_ALT MINUS  &mt LEFT_SHIFT SPACE        &lt 1 TAB  &kp BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL  &kp LEFT_GUI   &tog 4
+/*|--  0 ---|----  1 ----|----  2 ----|--------  3 --------|-------  4 -------|--------  5 --------|                             |------  6 -----|-----  7 -----|----  8 ----|--  9 -|-- 10 --|------- 11 -------|*/
+   &kp GRAVE &kp NUMBER_1 &kp NUMBER_2 &kp NUMBER_3         &kp N4             &kp N5                                             &kp N6          &kp N7         &kp N8       &kp N9  &kp N0   &kp MINUS
+/*|-- 12 ---|---- 13 ----|---- 14 ----|-------- 15 --------|------- 16 -------|-------- 17 --------|                             |------ 18 -----|----- 19 -----|---- 20 ----|-- 21 -|-- 22 --|------- 23 -------|*/
+   &kp ESC   &kp Q        &kp W        &kp F                &kp P              &kp B                                              &kp J           &kp L          &kp U        &kp Y   &kp SEMI &kp DEL
+/*|-- 24 ---|---- 25 ----|---- 26 ----|-------- 27 --------|------- 28 -------|-------- 29 --------|                             |------ 30 -----|----- 31 -----|---- 32 ----|-- 33 -|-- 34 --|------- 35 -------|*/
+   &mo 2     &kp A        &kp R        &kp S                &kp T              &kp G                                              &kp M           &kp N          &kp E        &kp I   &kp O    &lt 3 SINGLE_QUOTE
+/*|-- 36 ---|---- 37 ----|---- 38 ----|-------- 39 --------|------- 40 -------|-------- 41 --------|------ 42 -----|---- 43 -----|------ 44 -----|----- 45 -----|---- 46 ----|-- 47 -|-- 48 --|------- 49 -------|*/
+   &kp LCTRL &kp Z        &kp X        &kp C                &kp D              &kp V                &kp LS(LC(F24)) &kp LA(F24)   &kp K           &kp H          &kp COMMA    &kp DOT &kp FSLH &kp RCTRL
+/*                       |---- 50 ----|-------- 51 --------|------- 52 -------|-------- 53 --------|------ 54 -----|---- 55 -----|------ 56 -----|----- 57 -----|---- 58 ----|-- 59 -|                           |*/
+                          &tog 2       &kp LC(LG(LEFT_ALT)) &mt LEFT_ALT MINUS &mt LEFT_SHIFT SPACE &lt 1 TAB       &kp BACKSPACE &mt RSHFT ENTER &mt LALT EQUAL &kp LEFT_GUI &tog 4
             >;
 
             sensor-bindings =
@@ -275,11 +280,16 @@
 
         lower {
             bindings = <
- &none            &none              &none                 &none                  &none    &kp C_PREVIOUS                                      &kp C_NEXT      &none     &none             &none     &kp LS(EQUAL)  &kp EQUAL
- &to 0  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)             &kp SPACE             &kp DOLLAR  &kp LEFT_BRACKET                               &kp RIGHT_BRACKET   &kp HOME    &kp UP           &kp END       &kp LA(TAB)     &trans
-&trans            &none             &kp AT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT_BRACE                                 &kp RIGHT_BRACE   &kp LEFT  &kp DOWN         &kp RIGHT          &kp BSLH     &trans
-&trans            &none              &none          &kp LA(LEFT)          &kp LA(RIGHT)          &kp PIPE  &trans  &kp LC(PAUSE_BREAK)      &kp LG(SPACE)  &kp LG(T)   &kp F24  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)     &trans
-                                    &trans                &trans                 &trans            &trans  &trans               &trans             &trans     &trans    &trans            &trans
+/*|-  0 -|------  1 -----|------  2 -------|--------  3 --------|--------  4 ---------|------  5 ------|                          |------  6 -------|--  7 ---|--  8 --|------  9 ------|------ 10 ------|-- 11 ---|*/
+   &none  &none           &none             &none                &none                 &kp C_PREVIOUS                              &kp C_NEXT        &none     &none    &none            &kp LS(EQUAL)    &kp EQUAL
+/*|- 12 -|------ 13 -----|------ 14 -------|-------- 15 --------|-------- 16 ---------|------ 17 ------|                          |------ 18 -------|-- 19 ---|-- 20 --|------ 21 ------|------ 22 ------|-- 23 ---|*/
+   &to 0  &kp LC(PAGE_UP) &kp LC(PAGE_DOWN) &kp SPACE            &kp DOLLAR            &kp LEFT_BRACKET                            &kp RIGHT_BRACKET &kp HOME  &kp UP   &kp END          &kp LA(TAB)      &trans
+/*|- 24 -|------ 25 -----|------ 26 -------|-------- 27 --------|-------- 28 ---------|------ 29 ------|                          |------ 30 -------|-- 31 ---|-- 32 --|------ 33 ------|------ 34 ------|-- 35 ---|*/
+   &trans &none           &kp AT            &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_BRACE                              &kp RIGHT_BRACE   &kp LEFT  &kp DOWN &kp RIGHT        &kp BSLH         &trans
+/*|- 36 -|------ 37 -----|------ 38 -------|-------- 39 --------|-------- 40 ---------|------ 41 ------|- 42 -|-------- 43 -------|------ 44 -------|-- 45 ---|-- 46 --|------ 47 ------|------ 48 ------|-- 49 ---|*/
+   &trans &none           &none             &kp LA(LEFT)         &kp LA(RIGHT)         &kp PIPE         &trans &kp LC(PAUSE_BREAK) &kp LG(SPACE)     &kp LG(T) &kp F24  &kp LG(NUMBER_2) &kp LG(NUMBER_3) &trans
+/*                       |------ 50 -------|-------- 51 --------|-------- 52 ---------|------ 53 ------|- 54 -|-------- 55 -------|------ 56 -------|-- 57 ---|-- 58 --|------ 59 ------|                          |*/
+                          &trans            &trans               &trans                &trans           &trans &trans              &trans            &trans    &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
@@ -287,11 +297,16 @@
 
         raise {
             bindings = <
- &none    &none  &kp LS(LC(F2))  &kp LC(F4)  &kp LA(F4)  &kp LA(F11)                      &none          &none    &none    &none    &none   &none
- &to 0   &kp F1          &kp F2      &kp F3      &kp F4       &kp F5                  &kp PG_UP        &kp F23  &kp F17  &kp F18    &none  &trans
-&trans   &kp F6          &kp F7      &kp F8      &kp F9      &kp F10                  &kp PG_DN  &kp LA(LG(C))  &kp F22      &oe  &kp F19  &trans
-&trans  &kp F15         &kp F14     &kp F13     &kp F12      &kp F11  &trans  &trans    &kp F16     &umlaut_ss      &ue      &ae  &kp F20  &trans
-                         &trans      &trans      &trans       &trans  &trans  &trans     &trans         &trans   &trans   &trans
+/*|-  0 -|--  1 -|-----  2 -----|---  3 ---|---  4 ---|----  5 ---|             |--  6 ---|----  7 -----|--  8 -|--  9 -|-- 10 -|- 11 -|*/
+   &none  &none   &kp LS(LC(F2)) &kp LC(F4) &kp LA(F4) &kp LA(F11)               &none     &none         &none   &none   &none   &none
+/*|- 12 -|-- 13 -|----- 14 -----|--- 15 ---|--- 16 ---|---- 17 ---|             |-- 18 ---|---- 19 -----|-- 20 -|-- 21 -|-- 22 -|- 23 -|*/
+   &to 0  &kp F1  &kp F2         &kp F3     &kp F4     &kp F5                    &kp PG_UP &kp F23       &kp F17 &kp F18 &none   &trans
+/*|- 24 -|-- 25 -|----- 26 -----|--- 27 ---|--- 28 ---|---- 29 ---|             |-- 30 ---|---- 31 -----|-- 32 -|-- 33 -|-- 34 -|- 35 -|*/
+   &trans &kp F6  &kp F7         &kp F8     &kp F9     &kp F10                   &kp PG_DN &kp LA(LG(C)) &kp F22 &oe     &kp F19 &trans
+/*|- 36 -|-- 37 -|----- 38 -----|--- 39 ---|--- 40 ---|---- 41 ---|- 42 -|- 43 -|-- 44 ---|---- 45 -----|-- 46 -|-- 47 -|-- 48 -|- 49 -|*/
+   &trans &kp F15 &kp F14        &kp F13    &kp F12    &kp F11     &trans &trans &kp F16   &umlaut_ss    &ue     &ae     &kp F20 &trans
+/*               |----- 50 -----|--- 51 ---|--- 52 ---|---- 53 ---|- 54 -|- 55 -|-- 56 ---|---- 57 -----|-- 58 -|-- 59 -|              |*/
+                  &trans         &trans     &trans     &trans      &trans &trans &trans    &trans        &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_DN PG_UP>;
@@ -299,21 +314,31 @@
 
         settings {
             bindings = <
-&out OUT_BLE     &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                &none  &none  &none  &none  &none  &none
-&out OUT_USB       &bt BT_CLR  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI                &none  &none  &none  &none  &none  &none
-&out OUT_TOG  &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD                &none  &none  &none  &none  &none  &none
-   &mon_work           &mon_1           &mon_2           &mon_3           &mon_4     &mon_private  &none  &none  &none  &none  &none  &none  &none  &none
-                                         &none            &none            &none            &none  &none  &none  &none  &none  &none  &none
+/*|----  0 ----|------  1 -----|------  2 -----|------  3 -----|------  4 -----|------  5 -----|              6 -|  7 -|  8 -|  9 -| 10 -| 11 -|*/
+   &out OUT_BLE &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                &none &none &none &none &none &none
+/*|---- 12 ----|------ 13 -----|------ 14 -----|------ 15 -----|------ 16 -----|------ 17 -----|             18 -| 19 -| 20 -| 21 -| 22 -| 23 -|*/
+   &out OUT_USB &bt BT_CLR      &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI             &none &none &none &none &none &none
+/*|---- 24 ----|------ 25 -----|------ 26 -----|------ 27 -----|------ 28 -----|------ 29 -----|             30 -| 31 -| 32 -| 33 -| 34 -| 35 -|*/
+   &out OUT_TOG &rgb_ug RGB_TOG &rgb_ug RGB_EFR &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD             &none &none &none &none &none &none
+/*|---- 36 ----|------ 37 -----|------ 38 -----|------ 39 -----|------ 40 -----|------ 41 -----| 42 -| 43 -| 44 -| 45 -| 46 -| 47 -| 48 -| 49 -|*/
+   &mon_work    &mon_1          &mon_2          &mon_3          &mon_4          &mon_private    &none &none &none &none &none &none &none &none
+/*                             |------ 50 -----|------ 51 -----|------ 52 -----|------ 53 -----| 54 -| 55 -| 56 -| 57 -| 58 -| 59 -|           |*/
+                                &none           &none           &none           &none           &none &none &none &none &none &none
             >;
         };
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans    &trans   &kp HOME
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans    &trans    &kp UP    &kp END
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans
+/*|-  0 -|-  1 -|-  2 -|-  3 -|-  4 -|-  5 -|             |-  6 -|-  7 -|-  8 -|--  9 --|-- 10 --|-- 11 ---|*/
+   &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans   &trans   &trans
+/*|- 12 -|- 13 -|- 14 -|- 15 -|- 16 -|- 17 -|             |- 18 -|- 19 -|- 20 -|-- 21 --|-- 22 --|-- 23 ---|*/
+   &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans   &trans   &kp HOME
+/*|- 24 -|- 25 -|- 26 -|- 27 -|- 28 -|- 29 -|             |- 30 -|- 31 -|- 32 -|-- 33 --|-- 34 --|-- 35 ---|*/
+   &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans   &kp UP   &kp END
+/*|- 36 -|- 37 -|- 38 -|- 39 -|- 40 -|- 41 -|- 42 -|- 43 -|- 44 -|- 45 -|- 46 -|-- 47 --|-- 48 --|-- 49 ---|*/
+   &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp LEFT &kp DOWN &kp RIGHT
+/*              |- 50 -|- 51 -|- 52 -|- 53 -|- 54 -|- 55 -|- 56 -|- 57 -|- 58 -|-- 59 --|                  |*/
+                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -321,11 +346,16 @@
 
         qwerty {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans     &trans   &trans    &trans  &trans
-&trans   &kp Q   &kp W   &kp E   &kp R   &kp T                   &kp Y   &kp U      &kp I    &kp O     &kp P  &trans
-&trans   &kp A   &kp S   &kp D   &kp F   &kp G                   &kp H   &kp J      &kp K    &kp L  &kp SEMI  &trans
-&trans   &kp Z   &kp X   &kp C   &kp V   &kp B  &trans  &trans   &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans
+/*|-  0 -|-  1 -|-  2 -|-  3 -|-  4 -|-  5 -|             |-  6 -|-  7 -|--  8 ---|--  9 -|-- 10 --|- 11 -|*/
+   &trans &trans &trans &trans &trans &trans               &trans &trans &trans    &trans  &trans   &trans
+/*|- 12 -|- 13 -|- 14 -|- 15 -|- 16 -|- 17 -|             |- 18 -|- 19 -|-- 20 ---|-- 21 -|-- 22 --|- 23 -|*/
+   &trans &kp Q  &kp W  &kp E  &kp R  &kp T                &kp Y  &kp U  &kp I     &kp O   &kp P    &trans
+/*|- 24 -|- 25 -|- 26 -|- 27 -|- 28 -|- 29 -|             |- 30 -|- 31 -|-- 32 ---|-- 33 -|-- 34 --|- 35 -|*/
+   &trans &kp A  &kp S  &kp D  &kp F  &kp G                &kp H  &kp J  &kp K     &kp L   &kp SEMI &trans
+/*|- 36 -|- 37 -|- 38 -|- 39 -|- 40 -|- 41 -|- 42 -|- 43 -|- 44 -|- 45 -|-- 46 ---|-- 47 -|-- 48 --|- 49 -|*/
+   &trans &kp Z  &kp X  &kp C  &kp V  &kp B  &trans &trans &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH &trans
+/*              |- 50 -|- 51 -|- 52 -|- 53 -|- 54 -|- 55 -|- 56 -|- 57 -|-- 58 ---|-- 59 -|               |*/
+                 &trans &trans &trans &trans &trans &trans &trans &trans &trans    &trans
             >;
         };
     };
