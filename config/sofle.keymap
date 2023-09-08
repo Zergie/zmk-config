@@ -270,7 +270,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp LS(F24) LC(F24)>,
-                <&inc_dec_kp LC(Y) LC(E)>;
+                <&inc_dec_kp LA(DOWN_ARROW) LA(UP_ARROW)>;
         };
 
         lower {
@@ -284,7 +284,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp LEFT_ARROW RIGHT>;
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
         };
 
         raise {
