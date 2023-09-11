@@ -275,11 +275,11 @@
 
         lower {
             bindings = <
-&none   &none            &none              &none                 &none                  &kp C_PREVIOUS                                 &kp C_NEXT         &none      &none     &none             &kp LS(EQUAL)     &kp EQUAL
-&to 0   &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp SPACE             &kp DOLLAR             &kp LEFT_BRACKET                               &kp RIGHT_BRACKET  &kp HOME   &kp UP    &kp END           &kp LA(TAB)       &trans
-&trans  &none            &kp AT             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE                                 &kp RIGHT_BRACE    &kp LEFT   &kp DOWN  &kp RIGHT         &kp BSLH          &trans
-&trans  &none            &none              &kp LA(LEFT)          &kp LA(RIGHT)          &kp PIPE          &trans  &kp LC(PAUSE_BREAK)  &kp LG(SPACE)      &kp LG(T)  &kp F24   &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans
-                         &trans             &trans                &trans                 &trans            &trans  &trans               &trans             &trans     &trans    &trans
+&none   &kp LA(LC(LG(NUMBER_1)))  &none              &none                 &none                  &kp C_PREVIOUS                                 &kp C_NEXT         &none      &none     &none             &kp LS(EQUAL)     &kp EQUAL
+&to 0   &kp LC(PAGE_UP)           &kp LC(PAGE_DOWN)  &kp SPACE             &kp DOLLAR             &kp LEFT_BRACKET                               &kp RIGHT_BRACKET  &kp HOME   &kp UP    &kp END           &kp LA(TAB)       &trans
+&trans  &none                     &kp AT             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE                                 &kp RIGHT_BRACE    &kp LEFT   &kp DOWN  &kp RIGHT         &kp BSLH          &trans
+&trans  &none                     &none              &kp LA(LEFT)          &kp LA(RIGHT)          &kp PIPE          &trans  &kp LC(PAUSE_BREAK)  &kp LG(SPACE)      &kp LG(T)  &kp F24   &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans
+                                  &trans             &trans                &trans                 &trans            &trans  &trans               &trans             &trans     &trans    &trans
             >;
 
             sensor-bindings =
