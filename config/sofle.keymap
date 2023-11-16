@@ -252,11 +252,11 @@
 
         default {
             bindings = <
-&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp N4              &kp N5                                                 &kp N6           &kp N7          &kp N8        &kp N9   &kp N0    &kp MINUS
-&kp ESC    &kp Q         &kp W         &kp F                 &kp P               &kp B                                                  &kp J            &kp L           &kp U         &kp Y    &kp SEMI  &kp DEL
-&mo 2      &kp A         &kp R         &lt 1 S               &lt 2 T             &kp G                                                  &kp M            &kp N           &kp E         &kp I    &kp O     &lt 3 SINGLE_QUOTE
-&kp LCTRL  &kp Z         &kp X         &kp C                 &kp D               &kp V                 &kp C_PLAY_PAUSE  &kp C_MUTE     &kp K            &kp H           &kp COMMA     &kp DOT  &kp FSLH  &kp RCTRL
-                         &none         &kp LC(LG(LEFT_ALT))  &mt LEFT_ALT MINUS  &mt LEFT_SHIFT SPACE  &lt 1 TAB         &kp BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL  &kp LEFT_GUI  &none
+&kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp N4              &kp N5                                                 &kp N6           &kp N7          &kp N8          &kp N9      &kp N0    &kp MINUS
+&kp ESC    &kp Q         &kp W         &kp F                 &kp P               &kp B                                                  &kp J            &kp L           &kp U           &kp Y       &kp SEMI  &kp DEL
+&mo 2      &kp A         &kp R         &lt 1 S               &lt 2 T             &kp G                                                  &kp M            &mt LCTRL N     &mt LEFT_ALT E  &mt LWIN I  &kp O     &lt 3 SINGLE_QUOTE
+&kp LCTRL  &kp Z         &kp X         &kp C                 &kp D               &kp V                 &kp C_PLAY_PAUSE  &kp C_MUTE     &kp K            &kp H           &kp COMMA       &kp DOT     &kp FSLH  &kp RCTRL
+                         &none         &kp LC(LG(LEFT_ALT))  &mt LEFT_ALT MINUS  &mt LEFT_SHIFT SPACE  &lt 1 TAB         &kp BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL  &kp LEFT_GUI    &none
             >;
 
             sensor-bindings =
@@ -266,9 +266,9 @@
 
         lower {
             bindings = <
-&none   &kp LA(LC(LG(NUMBER_1)))  &kp LA(LC(LG(NUMBER_2)))  &kp LA(LC(LG(NUMBER_3)))  &kp LA(LC(LG(NUMBER_4)))  &kp C_PREVIOUS                               &kp C_NEXT     &none      &none     &none             &kp LS(EQUAL)     &kp EQUAL
-&to 0   &none                     &none                     &kp SPACE                 &kp DOLLAR                &none                                        &kp PAGE_UP    &kp HOME   &kp UP    &kp END           &kp LA(TAB)       &trans
-&trans  &none                     &kp AT                    &kp LC(PAGE_UP)           &kp LC(PAGE_DOWN)         &none                                        &kp PAGE_DOWN  &kp LEFT   &kp DOWN  &kp RIGHT         &kp BSLH          &trans
+&none   &kp LA(LC(LG(NUMBER_1)))  &kp LA(LC(LG(NUMBER_2)))  &kp LA(LC(LG(NUMBER_3)))  &kp LA(LC(LG(NUMBER_4)))  &kp C_PREVIOUS                               &kp C_NEXT     &none      &none     &none             &none             &none
+&to 0   &none                     &none                     &kp SPACE                 &none                     &none                                        &kp PAGE_UP    &kp HOME   &kp UP    &kp END           &kp LA(TAB)       &trans
+&trans  &none                     &none                     &kp LC(PAGE_UP)           &kp LC(PAGE_DOWN)         &none                                        &kp PAGE_DOWN  &kp LEFT   &kp DOWN  &kp RIGHT         &kp BSLH          &trans
 &trans  &none                     &none                     &kp LA(LEFT)              &kp LA(RIGHT)             &kp LG(DOT)     &trans  &kp LC(PAUSE_BREAK)  &kp LG(SPACE)  &kp LG(T)  &kp F24   &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans
                                   &trans                    &trans                    &trans                    &trans          &trans  &trans               &trans         &trans     &trans    &trans
             >;
@@ -280,10 +280,10 @@
 
         raise {
             bindings = <
-&none   &none    &kp LS(LC(F2))  &kp LC(F4)  &kp LA(F4)  &kp LA(F11)                  &none             &none              &none                 &none     &none    &none
-&to 0   &kp F1   &kp F2          &kp F3      &kp F4      &kp F5                       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RPAR  &arrow   &trans
-&trans  &kp F6   &kp F7          &kp F8      &kp F9      &kp F10                      &kp LEFT_BRACE    &kp PIPE           &kp BSLH              &oe       &kp F19  &trans
-&trans  &kp F15  &kp F14         &kp F13     &kp F12     &kp F11      &trans  &trans  &kp RIGHT_BRACE   &umlaut_ss         &ue                   &ae       &kp F20  &trans
+&none   &none    &kp LS(LC(F2))  &kp LC(F4)  &kp LA(F4)  &kp LA(F11)                  &none             &none              &none                 &none     &kp LS(EQUAL)  &kp EQUAL
+&to 0   &kp F1   &kp F2          &kp F3      &kp F4      &kp F5                       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RPAR  &arrow         &trans
+&trans  &kp F6   &kp F7          &kp F8      &kp F9      &kp F10                      &kp LEFT_BRACE    &kp PIPE           &kp BSLH              &oe       &kp F19        &trans
+&trans  &kp F15  &kp F14         &kp F13     &kp F12     &kp F11      &trans  &trans  &kp RIGHT_BRACE   &umlaut_ss         &ue                   &ae       &kp F20        &trans
                  &trans          &trans      &trans      &trans       &trans  &trans  &trans            &trans             &trans                &trans
             >;
 
