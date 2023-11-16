@@ -24,6 +24,7 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         ae: ae {
             compatible = "zmk,behavior-mod-morph";
             label = "AE";
@@ -32,6 +33,7 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         ue: ue {
             compatible = "zmk,behavior-mod-morph";
             label = "UE";
@@ -78,6 +80,7 @@
             wait-ms = <5>;
             tap-ms = <5>;
         };
+
         umlaut_Oe_big: umlaut_Oe_big {
             compatible = "zmk,behavior-macro";
             label = "Oe";
@@ -93,6 +96,7 @@
             wait-ms = <5>;
             tap-ms = <5>;
         };
+
         umlaut_Ue_big: umlaut_Ue_big {
             compatible = "zmk,behavior-macro";
             label = "Ue";
@@ -108,6 +112,7 @@
             wait-ms = <5>;
             tap-ms = <5>;
         };
+
         umlaut_ae: umlaut_ae {
             compatible = "zmk,behavior-macro";
             label = "ae";
@@ -123,6 +128,7 @@
             wait-ms = <5>;
             tap-ms = <5>;
         };
+
         umlaut_oe: umlaut_oe {
             compatible = "zmk,behavior-macro";
             label = "oe";
@@ -138,6 +144,7 @@
             wait-ms = <5>;
             tap-ms = <5>;
         };
+
         umlaut_ue: umlaut_ue {
             compatible = "zmk,behavior-macro";
             label = "ue";
@@ -153,6 +160,7 @@
             wait-ms = <5>;
             tap-ms = <5>;
         };
+
         umlaut_ss: umlaut_ss {
             compatible = "zmk,behavior-macro";
             label = "ss";
@@ -168,6 +176,7 @@
             wait-ms = <5>;
             tap-ms = <5>;
         };
+
         mon_1: mon_1 {
             compatible = "zmk,behavior-macro";
             label = "MON_1";
@@ -182,6 +191,7 @@
             wait-ms = <100>;
             tap-ms = <5>;
         };
+
         mon_2: mon_2 {
             compatible = "zmk,behavior-macro";
             label = "MON_2";
@@ -196,6 +206,7 @@
             wait-ms = <100>;
             tap-ms = <5>;
         };
+
         mon_3: mon_3 {
             compatible = "zmk,behavior-macro";
             label = "MON_3";
@@ -210,6 +221,7 @@
             wait-ms = <100>;
             tap-ms = <5>;
         };
+
         mon_4: mon_4 {
             compatible = "zmk,behavior-macro";
             label = "MON_4";
@@ -224,6 +236,7 @@
             wait-ms = <100>;
             tap-ms = <5>;
         };
+
         mon_private: mon_private {
             compatible = "zmk,behavior-macro";
             label = "MON_PRIVATE";
@@ -236,6 +249,7 @@
             wait-ms = <100>;
             tap-ms = <5>;
         };
+
         mon_work: mon_work {
             compatible = "zmk,behavior-macro";
             label = "MON_WORK";
@@ -257,7 +271,7 @@
             bindings = <
 &kp GRAVE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3          &kp N4              &kp N5                                                 &kp N6           &kp N7          &kp N8        &kp N9   &kp N0    &kp MINUS
 &kp ESC    &kp Q         &kp W         &kp F                 &kp P               &kp B                                                  &kp J            &kp L           &kp U         &kp Y    &kp SEMI  &kp DEL
-&mo 2      &kp A         &kp R         &kp S                 &kp T               &kp G                                                  &kp M            &kp N           &kp E         &kp I    &kp O     &lt 3 SINGLE_QUOTE
+&mo 2      &kp A         &kp R         &lt 1 S               &lt 2 T             &kp G                                                  &kp M            &kp N           &kp E         &kp I    &kp O     &lt 3 SINGLE_QUOTE
 &kp LCTRL  &kp Z         &kp X         &kp C                 &kp D               &kp V                 &kp C_PLAY_PAUSE  &kp C_MUTE     &kp K            &kp H           &kp COMMA     &kp DOT  &kp FSLH  &kp RCTRL
                          &tog 2        &kp LC(LG(LEFT_ALT))  &mt LEFT_ALT MINUS  &mt LEFT_SHIFT SPACE  &lt 1 TAB         &kp BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL  &kp LEFT_GUI  &tog 4
             >;
