@@ -12,10 +12,12 @@
 
 &mt {
     flavor = "tap-preferred";
+    require-prior-idle-ms = <125>;
 };
 
 &lt {
     flavor = "tap-preferred";
+    require-prior-idle-ms = <125>;
 };
 
 / {
