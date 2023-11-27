@@ -262,7 +262,7 @@
 &kp ESC    &kp Q         &kp W         &kp F                 &kp P               &kp B                                                  &kp J            &kp L           &kp U           &kp Y       &kp SEMI  &kp DEL
 &mo 2      &kp A         &kp R         &lt 1 S               &lt 2 T             &kp G                                                  &kp M            &mt LCTRL N     &mt LEFT_ALT E  &mt LWIN I  &kp O     &lt 3 SINGLE_QUOTE
 &kp LCTRL  &kp Z         &kp X         &kp C                 &kp D               &kp V                 &kp C_PLAY_PAUSE  &kp C_MUTE     &kp K            &kp H           &kp COMMA       &kp DOT     &kp FSLH  &kp RCTRL
-                         &none         &kp LC(LG(LEFT_ALT))  &mt LEFT_ALT MINUS  &mt LEFT_SHIFT SPACE  &lt 1 TAB         &kp BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL  &kp LEFT_GUI    &none
+                         &kp LG(PLUS)  &kp LC(LG(LEFT_ALT))  &mt LEFT_ALT MINUS  &mt LEFT_SHIFT SPACE  &lt 1 TAB         &kp BACKSPACE  &mt RSHFT ENTER  &mt LALT EQUAL  &kp LEFT_GUI    &none
             >;
 
             sensor-bindings =
