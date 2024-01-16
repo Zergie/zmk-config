@@ -202,7 +202,7 @@
                 <&macro_wait_time 500>,
                 <&kp LG(P)>,
                 <&macro_wait_time 100>,
-                <&kp HOME &kp ENTER &kp ESC>;
+                <&kp TAB &kp HOME &kp ENTER &kp ESC>;
 
             wait-ms = <100>;
             tap-ms = <5>;
@@ -217,7 +217,7 @@
                 <&macro_wait_time 500>,
                 <&kp LG(P)>,
                 <&macro_wait_time 100>,
-                <&kp HOME &kp DOWN_ARROW &kp ENTER &kp ESC>;
+                <&kp TAB &kp HOME &kp DOWN_ARROW &kp ENTER &kp ESC>;
 
             wait-ms = <100>;
             tap-ms = <5>;
@@ -232,7 +232,7 @@
                 <&macro_wait_time 500>,
                 <&kp LG(P)>,
                 <&macro_wait_time 100>,
-                <&kp END &kp UP_ARROW &kp ENTER &kp ESC>;
+                <&kp TAB &kp END &kp UP_ARROW &kp ENTER &kp ESC>;
 
             wait-ms = <100>;
             tap-ms = <5>;
@@ -247,7 +247,7 @@
                 <&macro_wait_time 500>,
                 <&kp LG(P)>,
                 <&macro_wait_time 100>,
-                <&kp END &kp ENTER &kp ESC>;
+                <&kp TAB &kp END &kp ENTER &kp ESC>;
 
             wait-ms = <100>;
             tap-ms = <5>;
