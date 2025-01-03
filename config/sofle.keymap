@@ -71,12 +71,12 @@
 
         mo_settings {
             bindings = <&mo 4>;
-            key-positions = <49 35>;
+            key-positions = <50 51 52>;
         };
 
         toggle_qwerty {
             bindings = <&tog 4>;
-            key-positions = <36 49>;
+            key-positions = <36 37>;
         };
     };
 
@@ -282,11 +282,11 @@
 
         lower {
             bindings = <
-&none   &kp LA(LC(LG(NUMBER_1)))  &kp LA(LC(LG(NUMBER_2)))  &kp LA(LC(LG(NUMBER_3)))  &kp LA(LC(LG(NUMBER_4)))  &kp C_PREVIOUS                               &kp C_NEXT     &none      &none     &none             &none             &none
-&to 0   &none                     &none                     &kp SPACE                 &none                     &none                                        &none          &kp HOME   &kp UP    &kp END           &kp LA(TAB)       &trans
-&trans  &kp LALT                  &kp LCTRL                 &kp LC(PAGE_UP)           &kp LC(PAGE_DOWN)         &none                                        &kp LC(LEFT)   &kp LEFT   &kp DOWN  &kp RIGHT         &kp LC(RIGHT)     &trans
-&trans  &none                     &none                     &kp LA(LEFT)              &kp LA(RIGHT)             &kp LG(DOT)     &trans  &kp LC(PAUSE_BREAK)  &kp LG(SPACE)  &kp LG(T)  &kp F24   &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans
-                                  &trans                    &trans                    &trans                    &trans          &trans  &trans               &trans         &trans     &trans    &trans
+&none   &kp LA(LC(LG(NUMBER_1)))  &kp LA(LC(LG(NUMBER_2)))  &kp LA(LC(LG(NUMBER_3)))  &kp LA(LC(LG(NUMBER_4)))  &kp C_PREVIOUS                               &kp C_NEXT     &none           &none         &none             &none             &none
+&to 0   &none                     &none                     &kp SPACE                 &none                     &none                                        &none          &kp HOME        &none         &kp END           &kp LA(TAB)       &trans
+&trans  &kp LALT                  &kp LCTRL                 &kp LC(PAGE_UP)           &kp LC(PAGE_DOWN)         &none                                        &kp LEFT       &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT         &kp LC(RIGHT)     &trans
+&trans  &none                     &none                     &kp LA(LEFT)              &kp LA(RIGHT)             &kp LG(DOT)     &trans  &kp LC(PAUSE_BREAK)  &kp LG(SPACE)  &kp LG(T)       &kp F24       &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans
+                                  &trans                    &trans                    &trans                    &trans          &trans  &trans               &trans         &trans          &trans        &trans
             >;
 
             sensor-bindings =
